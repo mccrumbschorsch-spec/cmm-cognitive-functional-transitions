@@ -1,0 +1,126 @@
+{
+  "schema_version": "3.1",
+  "analysis_lock_date": "2026-08-21",
+  "analysis_options": {
+    "primary_continuous_standardization": "fixed",
+    "primary_binary_definition": "matched_0.20",
+    "threshold_definitions": [
+      {"name": "legacy", "cognitive_cut": -0.43, "functional_cut": 0.43},
+      {"name": "strict", "cognitive_cut": -0.67, "functional_cut": 0.67},
+      {"name": "matched_0.15", "target_occupancy": 0.15},
+      {"name": "matched_0.20", "target_occupancy": 0.20},
+      {"name": "matched_0.25", "target_occupancy": 0.25}
+    ],
+    "matched_threshold_tie_policy": "keep_identical_scores_together_choose_closest_realised_occupancy_ties_choose_stricter",
+    "standardizations": ["fixed", "wave"],
+    "persistent_definition": "same_domain_impairment_at_end_and_next_scheduled_wave",
+    "performance_bootstrap_iterations": 200,
+    "write_participant_level_outputs": false
+  },
+  "cohorts": {
+    "charls": {
+      "file": "charls.csv",
+      "release": "Harmonized CHARLS Version D (June 2021), locally extended with CHARLS 2020",
+      "reference_wave": "1",
+      "included_waves": ["1", "2", "3", "4", "5"],
+      "wave_sequence": ["1", "2", "3", "4", "5"],
+      "id_column": "id",
+      "wave_column": "wave",
+      "time": {"mode": "year_month", "year_column": "interview_year", "month_column": "interview_month"},
+      "cmm": {
+        "hypertension": {"column": "hypertension", "positive_values": [1], "negative_values": [0], "missing_values": [], "persistence": "ever"},
+        "diabetes": {"column": "diabetes", "positive_values": [1], "negative_values": [0], "missing_values": [], "persistence": "ever"},
+        "heart": {"column": "heart", "positive_values": [1], "negative_values": [0], "missing_values": [], "persistence": "ever"},
+        "stroke": {"column": "stroke", "positive_values": [1], "negative_values": [0], "missing_values": [], "persistence": "ever"},
+        "cholesterol": {"column": "cholesterol", "positive_values": [1], "negative_values": [0], "missing_values": [], "persistence": "ever"}
+      },
+      "cognition": {"mode": "components", "minimum_fraction": 1.0, "inputs": [
+        {"column": "tr20", "role": "component", "reverse": false, "min": 0, "max": 20, "missing_values": []},
+        {"column": "orient", "role": "component", "reverse": false, "min": 0, "max": 4, "missing_values": []},
+        {"column": "ser7", "role": "component", "reverse": false, "min": 0, "max": 5, "missing_values": []},
+        {"column": "draw", "role": "component", "reverse": false, "min": 0, "max": 1, "missing_values": []}
+      ]},
+      "function": {"mode": "components", "minimum_fraction": 1.0, "inputs": [
+        {"column": "function_adl_fraction", "role": "component", "reverse": false, "min": 0, "max": 1, "missing_values": []},
+        {"column": "function_iadl_fraction", "role": "component", "reverse": false, "min": 0, "max": 1, "missing_values": []}
+      ]},
+      "covariates": {
+        "age": {"column": "age", "type": "numeric", "min": 10, "max": 120, "missing_values": []},
+        "sex": {"column": "sex", "type": "categorical", "missing_values": []},
+        "education": {"column": "education", "type": "numeric", "min": 1, "max": 3, "missing_values": []},
+        "depression": {"column": "depression", "type": "numeric", "min": 0, "max": 30, "missing_values": []},
+        "psychiatric": {"column": "psychiatric", "type": "binary", "positive_values": [1], "negative_values": [0], "missing_values": []},
+        "smoking": {"column": "smoking", "type": "binary", "positive_values": [1], "negative_values": [0], "missing_values": []},
+        "bmi": {"column": "bmi", "type": "numeric", "min": 10, "max": 80, "missing_values": []},
+        "physical_activity": {"column": "activity", "type": "categorical", "missing_values": []},
+        "alcohol": {"column": "alcohol", "type": "binary", "positive_values": [1], "negative_values": [0], "missing_values": []},
+        "wealth": {"column": "wealth", "type": "numeric", "missing_values": []},
+        "marital": {"column": "marital", "type": "categorical", "missing_values": []},
+        "polypharmacy": null
+      },
+      "mortality": {"encoding": "death_endpoint_row", "column": "death_endpoint", "endpoint_wave_value": "death", "positive_values": [1], "negative_values": [0], "missing_values": []}
+    },
+    "elsa": {
+      "file": "elsa.csv",
+      "release": "Harmonized ELSA Version G.3 (2002-2019)",
+      "reference_wave": "1",
+      "included_waves": ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+      "wave_sequence": ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+      "id_column": "id", "wave_column": "wave",
+      "time": {"mode": "year_month", "year_column": "interview_year", "month_column": "interview_month"},
+      "cmm": {
+        "hypertension": {"column": "hypertension", "positive_values": [1], "negative_values": [0], "missing_values": [], "persistence": "ever"},
+        "diabetes": {"column": "diabetes", "positive_values": [1], "negative_values": [0], "missing_values": [], "persistence": "ever"},
+        "heart": {"column": "heart", "positive_values": [1], "negative_values": [0], "missing_values": [], "persistence": "ever"},
+        "stroke": {"column": "stroke", "positive_values": [1], "negative_values": [0], "missing_values": [], "persistence": "ever"},
+        "cholesterol": {"column": "cholesterol", "positive_values": [1], "negative_values": [0], "missing_values": [], "persistence": "ever"}
+      },
+      "cognition": {"mode": "components", "minimum_fraction": 1.0, "inputs": [
+        {"column": "tr20", "role": "component", "reverse": false, "min": 0, "max": 20, "missing_values": []},
+        {"column": "orient", "role": "component", "reverse": false, "min": 0, "max": 4, "missing_values": []}
+      ]},
+      "function": {"mode": "components", "minimum_fraction": 1.0, "inputs": [
+        {"column": "function_adl_fraction", "role": "component", "reverse": false, "min": 0, "max": 1, "missing_values": []},
+        {"column": "function_iadl_fraction", "role": "component", "reverse": false, "min": 0, "max": 1, "missing_values": []}
+      ]},
+      "covariates": {
+        "age": {"column": "age", "type": "numeric", "min": 10, "max": 120, "missing_values": []}, "sex": {"column": "sex", "type": "categorical", "missing_values": []}, "education": {"column": "education", "type": "numeric", "min": 1, "max": 3, "missing_values": []},
+        "depression": {"column": "depression", "type": "numeric", "min": 0, "max": 8, "missing_values": []}, "psychiatric": {"column": "psychiatric", "type": "binary", "positive_values": [1], "negative_values": [0], "missing_values": []}, "smoking": {"column": "smoking", "type": "binary", "positive_values": [1], "negative_values": [0], "missing_values": []},
+        "bmi": {"column": "bmi", "type": "numeric", "min": 10, "max": 80, "missing_values": []}, "physical_activity": {"column": "activity", "type": "categorical", "missing_values": []}, "alcohol": {"column": "alcohol", "type": "binary", "positive_values": [1], "negative_values": [0], "missing_values": []}, "wealth": {"column": "wealth", "type": "numeric", "missing_values": []}, "marital": {"column": "marital", "type": "categorical", "missing_values": []}, "polypharmacy": null
+      },
+      "mortality": null
+    },
+    "hrs": {
+      "file": "hrs.csv", "release": "Harmonized HRS Version D (1992-2021) with RAND HRS 1992-2020 Version 2", "reference_wave": "5", "included_waves": ["5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"], "wave_sequence": ["5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"], "id_column": "id", "wave_column": "wave", "time": {"mode": "year_month", "year_column": "interview_year", "month_column": "interview_month"},
+      "cmm": {"hypertension": {"column": "hypertension", "positive_values": [1], "negative_values": [0], "missing_values": [], "persistence": "ever"}, "diabetes": {"column": "diabetes", "positive_values": [1], "negative_values": [0], "missing_values": [], "persistence": "ever"}, "heart": {"column": "heart", "positive_values": [1], "negative_values": [0], "missing_values": [], "persistence": "ever"}, "stroke": {"column": "stroke", "positive_values": [1], "negative_values": [0], "missing_values": [], "persistence": "ever"}, "cholesterol": {"column": "cholesterol", "positive_values": [1], "negative_values": [0], "missing_values": [], "persistence": "ever"}},
+      "cognition": {"mode": "total", "minimum_fraction": 1.0, "inputs": [{"column": "cog27", "role": "validated_total", "reverse": false, "min": 0, "max": 27, "missing_values": []}]},
+      "function": {"mode": "components", "minimum_fraction": 1.0, "inputs": [{"column": "function_adl_fraction", "role": "component", "reverse": false, "min": 0, "max": 1, "missing_values": []}, {"column": "function_iadl_fraction", "role": "component", "reverse": false, "min": 0, "max": 1, "missing_values": []}]},
+      "covariates": {"age": {"column": "age", "type": "numeric", "min": 10, "max": 120, "missing_values": []}, "sex": {"column": "sex", "type": "categorical", "missing_values": []}, "education": {"column": "education", "type": "numeric", "min": 1, "max": 3, "missing_values": []}, "depression": {"column": "depression", "type": "numeric", "min": 0, "max": 8, "missing_values": []}, "psychiatric": {"column": "psychiatric", "type": "binary", "positive_values": [1], "negative_values": [0], "missing_values": []}, "smoking": {"column": "smoking", "type": "binary", "positive_values": [1], "negative_values": [0], "missing_values": []}, "bmi": {"column": "bmi", "type": "numeric", "min": 10, "max": 80, "missing_values": []}, "physical_activity": {"column": "activity", "type": "categorical", "missing_values": []}, "alcohol": {"column": "alcohol", "type": "binary", "positive_values": [1], "negative_values": [0], "missing_values": []}, "wealth": null, "marital": {"column": "marital", "type": "categorical", "missing_values": []}, "polypharmacy": null},
+      "mortality": {"encoding": "death_endpoint_row", "column": "death_endpoint", "endpoint_wave_value": "death", "positive_values": [1], "negative_values": [0], "missing_values": []}
+    },
+    "klosa": {
+      "file": "klosa.csv", "release": "Harmonized KLoSA Version E.2 (2006-2020), July 2023; DOI 10.34729/815E-WN35", "reference_wave": "3", "included_waves": ["3", "4", "5", "6", "7"], "wave_sequence": ["3", "4", "5", "6", "7"], "id_column": "id", "wave_column": "wave", "time": {"mode": "year_month", "year_column": "interview_year", "month_column": "interview_month"},
+      "cmm": {"hypertension": {"column": "hypertension", "positive_values": [1], "negative_values": [0], "missing_values": [], "persistence": "ever"}, "diabetes": {"column": "diabetes", "positive_values": [1], "negative_values": [0], "missing_values": [], "persistence": "ever"}, "heart": {"column": "heart", "positive_values": [1], "negative_values": [0], "missing_values": [], "persistence": "ever"}, "stroke": {"column": "stroke", "positive_values": [1], "negative_values": [0], "missing_values": [], "persistence": "ever"}},
+      "cognition": {"mode": "total", "minimum_fraction": 1.0, "inputs": [{"column": "klosa_mmse30", "role": "validated_total", "reverse": false, "min": 0, "max": 30, "missing_values": []}]},
+      "function": {"mode": "components", "minimum_fraction": 1.0, "inputs": [{"column": "function_adl_fraction", "role": "component", "reverse": false, "min": 0, "max": 1, "missing_values": []}, {"column": "function_iadl_fraction", "role": "component", "reverse": false, "min": 0, "max": 1, "missing_values": []}]},
+      "covariates": {"age": {"column": "age", "type": "numeric", "min": 10, "max": 120, "missing_values": []}, "sex": {"column": "sex", "type": "categorical", "missing_values": []}, "education": {"column": "education", "type": "numeric", "min": 1, "max": 3, "missing_values": []}, "depression": {"column": "depression", "type": "numeric", "min": 0, "max": 30, "missing_values": []}, "psychiatric": {"column": "psychiatric", "type": "binary", "positive_values": [1], "negative_values": [0], "missing_values": []}, "smoking": {"column": "smoking", "type": "binary", "positive_values": [1], "negative_values": [0], "missing_values": []}, "bmi": {"column": "bmi", "type": "numeric", "min": 10, "max": 80, "missing_values": []}, "physical_activity": {"column": "activity", "type": "binary", "positive_values": [1], "negative_values": [0], "missing_values": []}, "alcohol": {"column": "alcohol", "type": "binary", "positive_values": [1], "negative_values": [0], "missing_values": []}, "wealth": {"column": "wealth", "type": "numeric", "missing_values": []}, "marital": {"column": "marital", "type": "categorical", "missing_values": []}, "polypharmacy": null},
+      "mortality": {"encoding": "death_endpoint_row", "column": "death_endpoint", "endpoint_wave_value": "death", "positive_values": [1], "negative_values": [0], "missing_values": []}
+    },
+    "mhas": {
+      "file": "mhas.csv", "release": "Harmonized MHAS Version C.2 (2001-2018), August 2023", "reference_wave": "1", "included_waves": ["1", "2", "3", "4", "5"], "wave_sequence": ["1", "2", "3", "4", "5"], "id_column": "id", "wave_column": "wave", "time": {"mode": "year_month", "year_column": "interview_year", "month_column": "interview_month"},
+      "cmm": {"hypertension": {"column": "hypertension", "positive_values": [1], "negative_values": [0], "missing_values": [], "persistence": "ever"}, "diabetes": {"column": "diabetes", "positive_values": [1], "negative_values": [0], "missing_values": [], "persistence": "ever"}, "heart": {"column": "heart", "positive_values": [1], "negative_values": [0], "missing_values": [], "persistence": "ever"}, "stroke": {"column": "stroke", "positive_values": [1], "negative_values": [0], "missing_values": [], "persistence": "ever"}},
+      "cognition": {"mode": "components", "minimum_fraction": 1.0, "inputs": [{"column": "mhas_memory", "role": "component", "reverse": false, "min": 0, "max": 8, "missing_values": []}, {"column": "vscan", "role": "component", "reverse": false, "min": 0, "max": 60, "missing_values": []}]},
+      "function": {"mode": "components", "minimum_fraction": 1.0, "inputs": [{"column": "function_adl_fraction", "role": "component", "reverse": false, "min": 0, "max": 1, "missing_values": []}, {"column": "function_iadl_fraction", "role": "component", "reverse": false, "min": 0, "max": 1, "missing_values": []}]},
+      "covariates": {"age": {"column": "age", "type": "numeric", "min": 10, "max": 120, "missing_values": []}, "sex": {"column": "sex", "type": "categorical", "missing_values": []}, "education": {"column": "education", "type": "numeric", "min": 1, "max": 3, "missing_values": []}, "depression": {"column": "depression", "type": "numeric", "min": 0, "max": 9, "missing_values": []}, "psychiatric": null, "smoking": {"column": "smoking", "type": "binary", "positive_values": [1], "negative_values": [0], "missing_values": []}, "bmi": {"column": "bmi", "type": "numeric", "min": 10, "max": 80, "missing_values": []}, "physical_activity": {"column": "activity", "type": "binary", "positive_values": [1], "negative_values": [0], "missing_values": []}, "alcohol": {"column": "alcohol", "type": "binary", "positive_values": [1], "negative_values": [0], "missing_values": []}, "wealth": null, "marital": {"column": "marital", "type": "categorical", "missing_values": []}, "polypharmacy": null},
+      "mortality": {"encoding": "death_endpoint_row", "column": "death_endpoint", "endpoint_wave_value": "death", "positive_values": [1], "negative_values": [0], "missing_values": []}
+    },
+    "share": {
+      "file": "share.csv", "release": "Harmonized SHARE Version F.2 (2004-2020), April 2024; source SHARE Release 9.0.0", "reference_wave": "4", "included_waves": ["4", "5", "6", "7", "8"], "wave_sequence": ["4", "5", "6", "7", "8"], "id_column": "id", "wave_column": "wave", "time": {"mode": "year_month", "year_column": "interview_year", "month_column": "interview_month"},
+      "cmm": {"hypertension": {"column": "hypertension", "positive_values": [1], "negative_values": [0], "missing_values": [], "persistence": "ever"}, "diabetes": {"column": "diabetes", "positive_values": [1], "negative_values": [0], "missing_values": [], "persistence": "ever"}, "heart": {"column": "heart", "positive_values": [1], "negative_values": [0], "missing_values": [], "persistence": "ever"}, "stroke": {"column": "stroke", "positive_values": [1], "negative_values": [0], "missing_values": [], "persistence": "ever"}, "cholesterol": {"column": "cholesterol", "positive_values": [1], "negative_values": [0], "missing_values": [], "persistence": "ever"}},
+      "cognition": {"mode": "components", "minimum_fraction": 1.0, "inputs": [{"column": "share_memory", "role": "component", "reverse": false, "min": 0, "max": 10, "missing_values": []}, {"column": "ser7", "role": "component", "reverse": false, "min": 0, "max": 5, "missing_values": []}, {"column": "verbf", "role": "component", "reverse": false, "min": 0, "max": 100, "missing_values": []}]},
+      "function": {"mode": "components", "minimum_fraction": 1.0, "inputs": [{"column": "function_adl_fraction", "role": "component", "reverse": false, "min": 0, "max": 1, "missing_values": []}, {"column": "function_iadl_fraction", "role": "component", "reverse": false, "min": 0, "max": 1, "missing_values": []}]},
+      "covariates": {"age": {"column": "age", "type": "numeric", "min": 10, "max": 120, "missing_values": []}, "sex": {"column": "sex", "type": "categorical", "missing_values": []}, "education": {"column": "education", "type": "numeric", "min": 1, "max": 3, "missing_values": []}, "depression": {"column": "depression", "type": "numeric", "min": 0, "max": 12, "missing_values": []}, "psychiatric": {"column": "psychiatric", "type": "binary", "positive_values": [1], "negative_values": [0], "missing_values": []}, "smoking": {"column": "smoking", "type": "binary", "positive_values": [1], "negative_values": [0], "missing_values": []}, "bmi": {"column": "bmi", "type": "numeric", "min": 10, "max": 80, "missing_values": []}, "physical_activity": {"column": "activity", "type": "categorical", "missing_values": []}, "alcohol": {"column": "alcohol", "type": "binary", "positive_values": [1], "negative_values": [0], "missing_values": []}, "wealth": {"column": "wealth", "type": "numeric", "missing_values": []}, "marital": {"column": "marital", "type": "categorical", "missing_values": []}, "polypharmacy": null},
+      "mortality": {"encoding": "death_endpoint_row", "column": "death_endpoint", "endpoint_wave_value": "death", "positive_values": [1], "negative_values": [0], "missing_values": []}
+    }
+  }
+}

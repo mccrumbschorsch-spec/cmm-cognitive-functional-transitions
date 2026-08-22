@@ -1,0 +1,63 @@
+cohort,analysis,adjustment_set,state_definition,standardization,persistent,outcome,exposure,reason,n,clusters,events,non_events,exposure_levels,mortality_available
+charls,continuous_gee_fixed_unannualised,medication_burden,continuous,fixed,False,cognitive_worsening_fixed_raw,cmm4_change_raw,required covariates unavailable: polypharmacy,35909,15477,,,4,True
+charls,continuous_gee_fixed_unannualised,medication_burden,continuous,fixed,False,functional_worsening_fixed_raw,cmm4_change_raw,required covariates unavailable: polypharmacy,58780,21408,,,5,True
+elsa,continuous_gee_fixed_unannualised,lifestyle,continuous,fixed,False,cognitive_worsening_fixed_raw,cmm4_change_raw,required covariates unavailable: bmi,45206,11325,,,4,False
+elsa,continuous_gee_fixed_unannualised,socioeconomic,continuous,fixed,False,cognitive_worsening_fixed_raw,cmm4_change_raw,required covariates unavailable: bmi,45206,11325,,,4,False
+elsa,continuous_gee_fixed_unannualised,medication_burden,continuous,fixed,False,cognitive_worsening_fixed_raw,cmm4_change_raw,"required covariates unavailable: bmi,polypharmacy",45206,11325,,,4,False
+elsa,continuous_gee_fixed_unannualised,lifestyle,continuous,fixed,False,functional_worsening_fixed_raw,cmm4_change_raw,required covariates unavailable: bmi,48376,11923,,,4,False
+elsa,continuous_gee_fixed_unannualised,socioeconomic,continuous,fixed,False,functional_worsening_fixed_raw,cmm4_change_raw,required covariates unavailable: bmi,48376,11923,,,4,False
+elsa,continuous_gee_fixed_unannualised,medication_burden,continuous,fixed,False,functional_worsening_fixed_raw,cmm4_change_raw,"required covariates unavailable: bmi,polypharmacy",48376,11923,,,4,False
+hrs,continuous_gee_fixed_unannualised,socioeconomic,continuous,fixed,False,cognitive_worsening_fixed_raw,cmm4_change_raw,required covariates unavailable: wealth,154620,30671,,,5,True
+hrs,continuous_gee_fixed_unannualised,medication_burden,continuous,fixed,False,cognitive_worsening_fixed_raw,cmm4_change_raw,"required covariates unavailable: wealth,polypharmacy",154620,30671,,,5,True
+hrs,continuous_gee_fixed_unannualised,socioeconomic,continuous,fixed,False,functional_worsening_fixed_raw,cmm4_change_raw,required covariates unavailable: wealth,147664,30958,,,5,True
+hrs,continuous_gee_fixed_unannualised,medication_burden,continuous,fixed,False,functional_worsening_fixed_raw,cmm4_change_raw,"required covariates unavailable: wealth,polypharmacy",147664,30958,,,5,True
+klosa,continuous_gee_fixed_unannualised,medication_burden,continuous,fixed,False,cognitive_worsening_fixed_raw,cmm4_change_raw,required covariates unavailable: polypharmacy,26073,8149,,,4,True
+klosa,continuous_gee_fixed_unannualised,medication_burden,continuous,fixed,False,functional_worsening_fixed_raw,cmm4_change_raw,required covariates unavailable: polypharmacy,28262,8451,,,4,True
+mhas,continuous_gee_fixed_unannualised,socioeconomic,continuous,fixed,False,cognitive_worsening_fixed_raw,cmm4_change_raw,required covariates unavailable: wealth,22586,13094,,,5,True
+mhas,continuous_gee_fixed_unannualised,medication_burden,continuous,fixed,False,cognitive_worsening_fixed_raw,cmm4_change_raw,"required covariates unavailable: wealth,polypharmacy",22586,13094,,,5,True
+mhas,continuous_gee_fixed_unannualised,socioeconomic,continuous,fixed,False,functional_worsening_fixed_raw,cmm4_change_raw,required covariates unavailable: wealth,20048,11961,,,5,True
+mhas,continuous_gee_fixed_unannualised,medication_burden,continuous,fixed,False,functional_worsening_fixed_raw,cmm4_change_raw,"required covariates unavailable: wealth,polypharmacy",20048,11961,,,5,True
+share,continuous_gee_fixed_unannualised,medication_burden,continuous,fixed,False,cognitive_worsening_fixed_raw,cmm4_change_raw,required covariates unavailable: polypharmacy,96818,54838,,,5,True
+share,continuous_gee_fixed_unannualised,medication_burden,continuous,fixed,False,functional_worsening_fixed_raw,cmm4_change_raw,required covariates unavailable: polypharmacy,107488,60204,,,5,True
+klosa,continuous_gee_fixed_unannualised,mental_health,continuous,fixed,False,cognitive_worsening_fixed_raw,cmm5_change_raw,required covariates unavailable: depression_or_psychiatric,0,0,0.0,0.0,0,True
+klosa,continuous_gee_fixed_unannualised,mental_health,continuous,fixed,False,functional_worsening_fixed_raw,cmm5_change_raw,required covariates unavailable: depression_or_psychiatric,0,0,0.0,0.0,0,True
+mhas,continuous_gee_fixed_unannualised,mental_health,continuous,fixed,False,cognitive_worsening_fixed_raw,cmm5_change_raw,required covariates unavailable: depression_or_psychiatric,0,0,0.0,0.0,0,True
+mhas,continuous_gee_fixed_unannualised,mental_health,continuous,fixed,False,functional_worsening_fixed_raw,cmm5_change_raw,required covariates unavailable: depression_or_psychiatric,0,0,0.0,0.0,0,True
+klosa,transition_multinomial_cluster,mental_health,matched_0.20,fixed,False,state_to,cmm4_start,multinomial model did not converge,20347,7194,,,5,True
+share,transition_multinomial_cluster,mental_health,matched_0.20,fixed,False,state_to,cmm4_start,multinomial model did not converge,75705,45805,,,5,True
+mhas,continuous_interval_gt_1.5_to_2.5y,base,continuous,fixed,False,cognitive_worsening_fixed_raw,cmm4_change_raw,insufficient observations or exposure variation,0,0,0.0,0.0,0,True
+mhas,continuous_interval_gt_1.5_to_2.5y,base,continuous,fixed,False,functional_worsening_fixed_raw,cmm4_change_raw,insufficient observations or exposure variation,0,0,0.0,0.0,0,True
+klosa,continuous_interval_gt_2.5y,base,continuous,fixed,False,cognitive_worsening_fixed_raw,cmm4_change_raw,insufficient observations or exposure variation,0,0,0.0,0.0,0,True
+klosa,continuous_interval_gt_2.5y,base,continuous,fixed,False,functional_worsening_fixed_raw,cmm4_change_raw,insufficient observations or exposure variation,0,0,0.0,0.0,0,True
+charls,continuous_interval_le_1.5y,base,continuous,fixed,False,cognitive_worsening_fixed_raw,cmm4_change_raw,insufficient observations or exposure variation,51,51,,,2,True
+charls,continuous_interval_le_1.5y,base,continuous,fixed,False,functional_worsening_fixed_raw,cmm4_change_raw,insufficient observations or exposure variation,111,111,,,3,True
+klosa,continuous_interval_le_1.5y,base,continuous,fixed,False,cognitive_worsening_fixed_raw,cmm4_change_raw,insufficient observations or exposure variation,0,0,0.0,0.0,0,True
+klosa,continuous_interval_le_1.5y,base,continuous,fixed,False,functional_worsening_fixed_raw,cmm4_change_raw,insufficient observations or exposure variation,0,0,0.0,0.0,0,True
+mhas,continuous_interval_le_1.5y,base,continuous,fixed,False,cognitive_worsening_fixed_raw,cmm4_change_raw,insufficient observations or exposure variation,0,0,0.0,0.0,0,True
+mhas,continuous_interval_le_1.5y,base,continuous,fixed,False,functional_worsening_fixed_raw,cmm4_change_raw,insufficient observations or exposure variation,0,0,0.0,0.0,0,True
+elsa,transition_gee,mental_health,legacy,fixed,False,death,cmm4_start,validated mortality endpoint unavailable,46114,12227,0.0,46114.0,5,False
+charls,transition_gee,medication_burden,matched_0.20,fixed,False,any_cognitive,cmm4_start,required covariates unavailable: polypharmacy,25237,12215,2577.0,22660.0,5,True
+charls,transition_gee,medication_burden,matched_0.20,fixed,False,any_functional,cmm4_start,required covariates unavailable: polypharmacy,25237,12215,3244.0,21993.0,5,True
+elsa,transition_gee,lifestyle,matched_0.20,fixed,False,any_cognitive,cmm4_start,required covariates unavailable: bmi,36540,10891,4525.0,32015.0,5,False
+elsa,transition_gee,socioeconomic,matched_0.20,fixed,False,any_cognitive,cmm4_start,required covariates unavailable: bmi,36540,10891,4525.0,32015.0,5,False
+elsa,transition_gee,medication_burden,matched_0.20,fixed,False,any_cognitive,cmm4_start,"required covariates unavailable: bmi,polypharmacy",36540,10891,4525.0,32015.0,5,False
+elsa,transition_gee,lifestyle,matched_0.20,fixed,False,any_functional,cmm4_start,required covariates unavailable: bmi,36540,10891,3021.0,33519.0,5,False
+elsa,transition_gee,socioeconomic,matched_0.20,fixed,False,any_functional,cmm4_start,required covariates unavailable: bmi,36540,10891,3021.0,33519.0,5,False
+elsa,transition_gee,medication_burden,matched_0.20,fixed,False,any_functional,cmm4_start,"required covariates unavailable: bmi,polypharmacy",36540,10891,3021.0,33519.0,5,False
+hrs,transition_gee,socioeconomic,matched_0.20,fixed,False,any_cognitive,cmm4_start,required covariates unavailable: wealth,98847,24279,9105.0,89742.0,5,True
+hrs,transition_gee,medication_burden,matched_0.20,fixed,False,any_cognitive,cmm4_start,"required covariates unavailable: wealth,polypharmacy",98847,24279,9105.0,89742.0,5,True
+hrs,transition_gee,socioeconomic,matched_0.20,fixed,False,any_functional,cmm4_start,required covariates unavailable: wealth,98847,24279,8540.0,90307.0,5,True
+hrs,transition_gee,medication_burden,matched_0.20,fixed,False,any_functional,cmm4_start,"required covariates unavailable: wealth,polypharmacy",98847,24279,8540.0,90307.0,5,True
+klosa,transition_gee,medication_burden,matched_0.20,fixed,False,any_cognitive,cmm4_start,required covariates unavailable: polypharmacy,19876,7023,1743.0,18133.0,5,True
+klosa,transition_gee,medication_burden,matched_0.20,fixed,False,any_functional,cmm4_start,required covariates unavailable: polypharmacy,19876,7023,797.0,19079.0,5,True
+mhas,transition_gee,socioeconomic,matched_0.20,fixed,False,any_cognitive,cmm4_start,required covariates unavailable: wealth,14108,9298,1613.0,12495.0,5,True
+mhas,transition_gee,medication_burden,matched_0.20,fixed,False,any_cognitive,cmm4_start,"required covariates unavailable: wealth,polypharmacy",14108,9298,1613.0,12495.0,5,True
+mhas,transition_gee,socioeconomic,matched_0.20,fixed,False,any_functional,cmm4_start,required covariates unavailable: wealth,14108,9298,1678.0,12430.0,5,True
+mhas,transition_gee,medication_burden,matched_0.20,fixed,False,any_functional,cmm4_start,"required covariates unavailable: wealth,polypharmacy",14108,9298,1678.0,12430.0,5,True
+share,transition_gee,medication_burden,matched_0.20,fixed,False,any_cognitive,cmm4_start,required covariates unavailable: polypharmacy,71680,43523,6056.0,65624.0,5,True
+share,transition_gee,medication_burden,matched_0.20,fixed,False,any_functional,cmm4_start,required covariates unavailable: polypharmacy,71680,43523,5866.0,65814.0,5,True
+klosa,transition_gee,mental_health,matched_0.20,fixed,False,any_cognitive,cmm5_start,required covariates unavailable: depression_or_psychiatric,0,0,0.0,0.0,0,True
+klosa,transition_gee,mental_health,matched_0.20,fixed,False,any_functional,cmm5_start,required covariates unavailable: depression_or_psychiatric,0,0,0.0,0.0,0,True
+mhas,transition_gee,mental_health,matched_0.20,fixed,False,any_cognitive,cmm5_start,required covariates unavailable: depression_or_psychiatric,0,0,0.0,0.0,0,True
+mhas,transition_gee,mental_health,matched_0.20,fixed,False,any_functional,cmm5_start,required covariates unavailable: depression_or_psychiatric,0,0,0.0,0.0,0,True
+elsa,transition_gee,mental_health,matched_0.20,fixed,False,death,cmm4_start,validated mortality endpoint unavailable,44486,12180,0.0,44486.0,5,False

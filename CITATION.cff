@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the associated article."
+title: "Cardiometabolic multimorbidity and cognitive-functional transitions across international ageing cohorts"
+type: software
+version: 1.0.0
+date-released: 2026-08-21
+authors:
+  - family-names: Li
+    given-names: Ming
+  - family-names: Pan
+    given-names: Xiaoyu
+  - family-names: Li
+    given-names: Xi
+  - family-names: Wu
+    given-names: Xian
+  - family-names: Cai
+    given-names: Jiale
+  - family-names: Li
+    given-names: Lei
+  - family-names: Lu
+    given-names: Hailong
+keywords:
+  - cardiometabolic multimorbidity
+  - cognitive ageing
+  - functional limitation
+  - longitudinal cohorts

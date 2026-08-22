@@ -1,0 +1,65 @@
+{
+  "schema_version": "3.0",
+  "notes": "Replace every __REQUIRED__ value after auditing the actual harmonised CSV and exact cohort release. The pipeline intentionally stops if any required mapping or code is undeclared.",
+  "analysis_options": {
+    "performance_bootstrap_iterations": 200
+  },
+  "cohorts": {
+    "hrs": {
+      "file": "hrs.csv",
+      "release": "__REQUIRED__",
+      "reference_wave": "__REQUIRED__",
+      "included_waves": ["__REQUIRED__"],
+      "id_column": "__REQUIRED__",
+      "wave_column": "__REQUIRED__",
+      "time": {
+        "mode": "year_month",
+        "year_column": "__REQUIRED__",
+        "month_column": null
+      },
+      "cmm": {
+        "hypertension": {"column": "__REQUIRED__", "positive_values": ["1"], "negative_values": ["0"], "missing_values": [".d", ".r"], "persistence": "ever"},
+        "diabetes": {"column": "__REQUIRED__", "positive_values": ["1"], "negative_values": ["0"], "missing_values": [".d", ".r"], "persistence": "ever"},
+        "heart": {"column": "__REQUIRED__", "positive_values": ["1"], "negative_values": ["0"], "missing_values": [".d", ".r"], "persistence": "ever"},
+        "stroke": {"column": "__REQUIRED__", "positive_values": ["1"], "negative_values": ["0"], "missing_values": [".d", ".r"], "persistence": "ever"},
+        "cholesterol": {"column": "__REQUIRED__", "positive_values": ["1"], "negative_values": ["0"], "missing_values": [".d", ".r"], "persistence": "current"}
+      },
+      "cognition": {
+        "mode": "components",
+        "minimum_fraction": 0.75,
+        "inputs": [
+          {"column": "__REQUIRED__", "role": "component", "reverse": false, "min": "__REQUIRED__", "max": "__REQUIRED__", "missing_values": []}
+        ]
+      },
+      "function": {
+        "mode": "components",
+        "minimum_fraction": 0.75,
+        "inputs": [
+          {"column": "__REQUIRED__", "role": "component", "reverse": false, "min": "__REQUIRED__", "max": "__REQUIRED__", "missing_values": []}
+        ]
+      },
+      "covariates": {
+        "age": {"column": "__REQUIRED__", "type": "numeric", "min": 40, "max": 120, "missing_values": []},
+        "sex": {"column": "__REQUIRED__", "type": "categorical", "missing_values": []},
+        "education": {"column": "__REQUIRED__", "type": "numeric", "min": 0, "max": 40, "missing_values": []},
+        "depression": {"column": "__REQUIRED__", "type": "numeric", "min": "__REQUIRED__", "max": "__REQUIRED__", "missing_values": []},
+        "psychiatric": null,
+        "smoking": {"column": "__REQUIRED__", "type": "categorical", "missing_values": []},
+        "bmi": {"column": "__REQUIRED__", "type": "numeric", "min": 10, "max": 80, "missing_values": []},
+        "physical_activity": {"column": "__REQUIRED__", "type": "categorical", "missing_values": []},
+        "alcohol": {"column": "__REQUIRED__", "type": "categorical", "missing_values": []},
+        "wealth": {"column": "__REQUIRED__", "type": "numeric", "missing_values": []},
+        "marital": {"column": "__REQUIRED__", "type": "categorical", "missing_values": []},
+        "polypharmacy": {"column": "__REQUIRED__", "type": "numeric", "min": 0, "missing_values": []}
+      },
+      "mortality": null,
+      "mortality_example_only": {
+        "encoding": "death_endpoint_row",
+        "column": "__REQUIRED__",
+        "positive_values": ["1"],
+        "negative_values": ["0"],
+        "missing_values": []
+      }
+    }
+  }
+}

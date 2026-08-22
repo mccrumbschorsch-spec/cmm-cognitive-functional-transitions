@@ -1,0 +1,2868 @@
+[
+  {
+    "cohort": "charls",
+    "release": "Harmonized CHARLS Version D (June 2021), locally extended with CHARLS 2020",
+    "source": "private_input/charls.csv",
+    "source_rows": 99457,
+    "included_wave_rows_before_required_field_filter": 99457,
+    "invalid_time_rows_excluded": 0,
+    "missing_id_or_wave_rows_excluded": 0,
+    "rows": 99457,
+    "participants": 25873,
+    "waves": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "death"
+    ],
+    "wave_sequence": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "time_years_min": 2011.4583333333333,
+    "time_years_max": 2020.9583333333333,
+    "cmm": [
+      {
+        "disease": "hypertension",
+        "available": true,
+        "column": "hypertension",
+        "persistence": "ever"
+      },
+      {
+        "disease": "diabetes",
+        "available": true,
+        "column": "diabetes",
+        "persistence": "ever"
+      },
+      {
+        "disease": "heart",
+        "available": true,
+        "column": "heart",
+        "persistence": "ever"
+      },
+      {
+        "disease": "stroke",
+        "available": true,
+        "column": "stroke",
+        "persistence": "ever"
+      },
+      {
+        "disease": "cholesterol",
+        "available": true,
+        "column": "cholesterol",
+        "persistence": "ever"
+      }
+    ],
+    "cognition": {
+      "domain": "cognition",
+      "mode": "components",
+      "source_metric_type": "fixed_reference_item_z_mean",
+      "inputs": [
+        "tr20",
+        "orient",
+        "ser7",
+        "draw"
+      ],
+      "implemented_reliability_metric": "complete_case_one_factor_Pearson_omega_and_alpha",
+      "reliability_boundary": "binary-item omega is Pearson-based, not polychoric ordinal omega; alpha equals KR-20 for binary items",
+      "minimum_fraction": 1.0,
+      "required_count": 4,
+      "reference_wave": "1",
+      "reference_n": 17708,
+      "alpha_reference_complete_case": 0.6349093528228594,
+      "omega_reference_complete_case": 0.7855848761603164,
+      "composite_reference_mean": 0.11024669981754764,
+      "composite_reference_sd": 0.6558779909043289,
+      "item_parameters": {
+        "tr20": {
+          "reference_mean": 7.254746609564597,
+          "reference_sd": 3.3755556153136297
+        },
+        "orient": {
+          "reference_mean": 3.0426108211666776,
+          "reference_sd": 1.0944892479224655
+        },
+        "ser7": {
+          "reference_mean": 3.5332213120492892,
+          "reference_sd": 1.6463091267720396
+        },
+        "draw": {
+          "reference_mean": 0.6320444781400051,
+          "reference_sd": 0.48226439837414836
+        }
+      },
+      "item_wave_audit": [
+        {
+          "wave": "1",
+          "column": "tr20",
+          "n_observed": 14010,
+          "missing_percent": 20.88321662525412,
+          "minimum_observed": 0.0,
+          "maximum_observed": 20.0
+        },
+        {
+          "wave": "1",
+          "column": "orient",
+          "n_observed": 15137,
+          "missing_percent": 14.518861531511181,
+          "minimum_observed": 0.0,
+          "maximum_observed": 4.0
+        },
+        {
+          "wave": "1",
+          "column": "ser7",
+          "n_observed": 14283,
+          "missing_percent": 19.341540546645582,
+          "minimum_observed": 0.0,
+          "maximum_observed": 5.0
+        },
+        {
+          "wave": "1",
+          "column": "draw",
+          "n_observed": 15828,
+          "missing_percent": 10.616670431443415,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "2",
+          "column": "tr20",
+          "n_observed": 15699,
+          "missing_percent": 15.651192778852351,
+          "minimum_observed": 0.0,
+          "maximum_observed": 20.0
+        },
+        {
+          "wave": "2",
+          "column": "orient",
+          "n_observed": 15089,
+          "missing_percent": 18.928648183967333,
+          "minimum_observed": 0.0,
+          "maximum_observed": 4.0
+        },
+        {
+          "wave": "2",
+          "column": "ser7",
+          "n_observed": 14772,
+          "missing_percent": 20.63185041908446,
+          "minimum_observed": 0.0,
+          "maximum_observed": 5.0
+        },
+        {
+          "wave": "2",
+          "column": "draw",
+          "n_observed": 16366,
+          "missing_percent": 12.067483344079088,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "3",
+          "column": "tr20",
+          "n_observed": 18909,
+          "missing_percent": 10.371142816514196,
+          "minimum_observed": 0.0,
+          "maximum_observed": 20.0
+        },
+        {
+          "wave": "3",
+          "column": "orient",
+          "n_observed": 18353,
+          "missing_percent": 13.006588614494952,
+          "minimum_observed": 0.0,
+          "maximum_observed": 4.0
+        },
+        {
+          "wave": "3",
+          "column": "ser7",
+          "n_observed": 17631,
+          "missing_percent": 16.428876143527514,
+          "minimum_observed": 0.0,
+          "maximum_observed": 5.0
+        },
+        {
+          "wave": "3",
+          "column": "draw",
+          "n_observed": 19240,
+          "missing_percent": 8.802199364838604,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "4",
+          "column": "tr20",
+          "n_observed": 15688,
+          "missing_percent": 20.8316511909568,
+          "minimum_observed": 0.0,
+          "maximum_observed": 20.0
+        },
+        {
+          "wave": "4",
+          "column": "orient",
+          "n_observed": 17966,
+          "missing_percent": 9.33589018974566,
+          "minimum_observed": 0.0,
+          "maximum_observed": 4.0
+        },
+        {
+          "wave": "4",
+          "column": "ser7",
+          "n_observed": 13615,
+          "missing_percent": 31.292894630601538,
+          "minimum_observed": 0.0,
+          "maximum_observed": 5.0
+        },
+        {
+          "wave": "4",
+          "column": "draw",
+          "n_observed": 15542,
+          "missing_percent": 21.568429551877273,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "5",
+          "column": "tr20",
+          "n_observed": 16594,
+          "missing_percent": 14.441866460427946,
+          "minimum_observed": 0.0,
+          "maximum_observed": 20.0
+        },
+        {
+          "wave": "5",
+          "column": "orient",
+          "n_observed": 17254,
+          "missing_percent": 11.038927558649137,
+          "minimum_observed": 0.0,
+          "maximum_observed": 4.0
+        },
+        {
+          "wave": "5",
+          "column": "ser7",
+          "n_observed": 14151,
+          "missing_percent": 27.037896365042535,
+          "minimum_observed": 0.0,
+          "maximum_observed": 5.0
+        },
+        {
+          "wave": "5",
+          "column": "draw",
+          "n_observed": 15476,
+          "missing_percent": 20.206238721319927,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "death",
+          "column": "tr20",
+          "n_observed": 0,
+          "missing_percent": 100.0,
+          "minimum_observed": NaN,
+          "maximum_observed": NaN
+        },
+        {
+          "wave": "death",
+          "column": "orient",
+          "n_observed": 0,
+          "missing_percent": 100.0,
+          "minimum_observed": NaN,
+          "maximum_observed": NaN
+        },
+        {
+          "wave": "death",
+          "column": "ser7",
+          "n_observed": 0,
+          "missing_percent": 100.0,
+          "minimum_observed": NaN,
+          "maximum_observed": NaN
+        },
+        {
+          "wave": "death",
+          "column": "draw",
+          "n_observed": 0,
+          "missing_percent": 100.0,
+          "minimum_observed": NaN,
+          "maximum_observed": NaN
+        }
+      ],
+      "reliability_by_wave": [
+        {
+          "wave": "1",
+          "n_rows": 17708,
+          "complete_case_n": 12404,
+          "alpha_complete_case": 0.6349093528228594,
+          "omega_one_factor_complete_case": 0.7855848761603164
+        },
+        {
+          "wave": "2",
+          "n_rows": 18612,
+          "complete_case_n": 13374,
+          "alpha_complete_case": 0.6102931009017019,
+          "omega_one_factor_complete_case": 0.7742003301288584
+        },
+        {
+          "wave": "3",
+          "n_rows": 21097,
+          "complete_case_n": 16389,
+          "alpha_complete_case": 0.6179374405393199,
+          "omega_one_factor_complete_case": 0.7784400691697692
+        },
+        {
+          "wave": "4",
+          "n_rows": 19816,
+          "complete_case_n": 12139,
+          "alpha_complete_case": 0.5618942786932554,
+          "omega_one_factor_complete_case": 0.7535997916087293
+        },
+        {
+          "wave": "5",
+          "n_rows": 19395,
+          "complete_case_n": 13195,
+          "alpha_complete_case": 0.5189642119774339,
+          "omega_one_factor_complete_case": 0.7363397784577839
+        },
+        {
+          "wave": "death",
+          "n_rows": 2829,
+          "complete_case_n": 0,
+          "alpha_complete_case": NaN,
+          "omega_one_factor_complete_case": NaN
+        }
+      ]
+    },
+    "function": {
+      "domain": "function",
+      "mode": "components",
+      "source_metric_type": "fixed_reference_item_z_mean",
+      "inputs": [
+        "function_adl_fraction",
+        "function_iadl_fraction"
+      ],
+      "implemented_reliability_metric": "complete_case_one_factor_Pearson_omega_and_alpha",
+      "reliability_boundary": "binary-item omega is Pearson-based, not polychoric ordinal omega; alpha equals KR-20 for binary items",
+      "minimum_fraction": 1.0,
+      "required_count": 2,
+      "reference_wave": "1",
+      "reference_n": 17708,
+      "alpha_reference_complete_case": 0.8107334395473857,
+      "omega_reference_complete_case": 0.9135483865723586,
+      "composite_reference_mean": 1.7772256587263605e-05,
+      "composite_reference_sd": 0.9165634775918046,
+      "item_parameters": {
+        "function_adl_fraction": {
+          "reference_mean": 0.06086212531964391,
+          "reference_sd": 0.17166353468718623
+        },
+        "function_iadl_fraction": {
+          "reference_mean": 0.09501432664756447,
+          "reference_sd": 0.22232371069070014
+        }
+      },
+      "item_wave_audit": [
+        {
+          "wave": "1",
+          "column": "function_adl_fraction",
+          "n_observed": 17337,
+          "missing_percent": 2.0950982606731423,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "1",
+          "column": "function_iadl_fraction",
+          "n_observed": 17450,
+          "missing_percent": 1.4569686017619154,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "2",
+          "column": "function_adl_fraction",
+          "n_observed": 18185,
+          "missing_percent": 2.2942187835804857,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "2",
+          "column": "function_iadl_fraction",
+          "n_observed": 18085,
+          "missing_percent": 2.8315065549108103,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "3",
+          "column": "function_adl_fraction",
+          "n_observed": 20137,
+          "missing_percent": 4.5504100109020245,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "3",
+          "column": "function_iadl_fraction",
+          "n_observed": 20607,
+          "missing_percent": 2.3226051097312412,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "4",
+          "column": "function_adl_fraction",
+          "n_observed": 19454,
+          "missing_percent": 1.8268066209123939,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "4",
+          "column": "function_iadl_fraction",
+          "n_observed": 19721,
+          "missing_percent": 0.47941057731126363,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "5",
+          "column": "function_adl_fraction",
+          "n_observed": 19348,
+          "missing_percent": 0.2423304975509152,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "5",
+          "column": "function_iadl_fraction",
+          "n_observed": 19347,
+          "missing_percent": 0.24748646558391338,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "death",
+          "column": "function_adl_fraction",
+          "n_observed": 0,
+          "missing_percent": 100.0,
+          "minimum_observed": NaN,
+          "maximum_observed": NaN
+        },
+        {
+          "wave": "death",
+          "column": "function_iadl_fraction",
+          "n_observed": 0,
+          "missing_percent": 100.0,
+          "minimum_observed": NaN,
+          "maximum_observed": NaN
+        }
+      ],
+      "reliability_by_wave": [
+        {
+          "wave": "1",
+          "n_rows": 17708,
+          "complete_case_n": 17248,
+          "alpha_complete_case": 0.8107334395473857,
+          "omega_one_factor_complete_case": 0.9135483865723586
+        },
+        {
+          "wave": "2",
+          "n_rows": 18612,
+          "complete_case_n": 17896,
+          "alpha_complete_case": 0.8091225075169113,
+          "omega_one_factor_complete_case": 0.9128762456192344
+        },
+        {
+          "wave": "3",
+          "n_rows": 21097,
+          "complete_case_n": 19841,
+          "alpha_complete_case": 0.8109893719105694,
+          "omega_one_factor_complete_case": 0.9138497170777687
+        },
+        {
+          "wave": "4",
+          "n_rows": 19816,
+          "complete_case_n": 19454,
+          "alpha_complete_case": 0.8176996040509197,
+          "omega_one_factor_complete_case": 0.9164882939254192
+        },
+        {
+          "wave": "5",
+          "n_rows": 19395,
+          "complete_case_n": 19347,
+          "alpha_complete_case": 0.8310647470929877,
+          "omega_one_factor_complete_case": 0.9228000152234005
+        },
+        {
+          "wave": "death",
+          "n_rows": 2829,
+          "complete_case_n": 0,
+          "alpha_complete_case": NaN,
+          "omega_one_factor_complete_case": NaN
+        }
+      ]
+    },
+    "mortality_available": true,
+    "death_endpoint_rows_excluded_from_domain_scoring": 2829,
+    "death_endpoint_rows_excluded_from_interview_cmm_scoring": 2829
+  },
+  {
+    "cohort": "elsa",
+    "release": "Harmonized ELSA Version G.3 (2002-2019)",
+    "source": "private_input/elsa.csv",
+    "source_rows": 90069,
+    "included_wave_rows_before_required_field_filter": 90069,
+    "invalid_time_rows_excluded": 0,
+    "missing_id_or_wave_rows_excluded": 0,
+    "rows": 90069,
+    "participants": 19802,
+    "waves": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "wave_sequence": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "time_years_min": 2002.2083333333333,
+    "time_years_max": 2019.5416666666667,
+    "cmm": [
+      {
+        "disease": "hypertension",
+        "available": true,
+        "column": "hypertension",
+        "persistence": "ever"
+      },
+      {
+        "disease": "diabetes",
+        "available": true,
+        "column": "diabetes",
+        "persistence": "ever"
+      },
+      {
+        "disease": "heart",
+        "available": true,
+        "column": "heart",
+        "persistence": "ever"
+      },
+      {
+        "disease": "stroke",
+        "available": true,
+        "column": "stroke",
+        "persistence": "ever"
+      },
+      {
+        "disease": "cholesterol",
+        "available": true,
+        "column": "cholesterol",
+        "persistence": "ever"
+      }
+    ],
+    "cognition": {
+      "domain": "cognition",
+      "mode": "components",
+      "source_metric_type": "fixed_reference_item_z_mean",
+      "inputs": [
+        "tr20",
+        "orient"
+      ],
+      "implemented_reliability_metric": "complete_case_one_factor_Pearson_omega_and_alpha",
+      "reliability_boundary": "binary-item omega is Pearson-based, not polychoric ordinal omega; alpha equals KR-20 for binary items",
+      "minimum_fraction": 1.0,
+      "required_count": 2,
+      "reference_wave": "1",
+      "reference_n": 12099,
+      "alpha_reference_complete_case": 0.3969852713453499,
+      "omega_reference_complete_case": 0.7683618177125132,
+      "composite_reference_mean": 0.0041166703671793375,
+      "composite_reference_sd": 0.7814256357790984,
+      "item_parameters": {
+        "tr20": {
+          "reference_mean": 9.472780104264594,
+          "reference_sd": 3.5882355312360192
+        },
+        "orient": {
+          "reference_mean": 3.7341320418047412,
+          "reference_sd": 0.5804645428918485
+        }
+      },
+      "item_wave_audit": [
+        {
+          "wave": "1",
+          "column": "tr20",
+          "n_observed": 11701,
+          "missing_percent": 3.289528060170262,
+          "minimum_observed": 0.0,
+          "maximum_observed": 20.0
+        },
+        {
+          "wave": "1",
+          "column": "orient",
+          "n_observed": 11769,
+          "missing_percent": 2.727498140342177,
+          "minimum_observed": 0.0,
+          "maximum_observed": 4.0
+        },
+        {
+          "wave": "2",
+          "column": "tr20",
+          "n_observed": 9234,
+          "missing_percent": 2.099236641221374,
+          "minimum_observed": 0.0,
+          "maximum_observed": 20.0
+        },
+        {
+          "wave": "2",
+          "column": "orient",
+          "n_observed": 9253,
+          "missing_percent": 1.8977947413061917,
+          "minimum_observed": 0.0,
+          "maximum_observed": 4.0
+        },
+        {
+          "wave": "3",
+          "column": "tr20",
+          "n_observed": 9478,
+          "missing_percent": 2.9490067581404875,
+          "minimum_observed": 0.0,
+          "maximum_observed": 20.0
+        },
+        {
+          "wave": "3",
+          "column": "orient",
+          "n_observed": 9482,
+          "missing_percent": 2.9080483309440917,
+          "minimum_observed": 0.0,
+          "maximum_observed": 4.0
+        },
+        {
+          "wave": "4",
+          "column": "tr20",
+          "n_observed": 10544,
+          "missing_percent": 4.579185520361992,
+          "minimum_observed": 0.0,
+          "maximum_observed": 20.0
+        },
+        {
+          "wave": "4",
+          "column": "orient",
+          "n_observed": 10552,
+          "missing_percent": 4.506787330316742,
+          "minimum_observed": 0.0,
+          "maximum_observed": 4.0
+        },
+        {
+          "wave": "5",
+          "column": "tr20",
+          "n_observed": 9688,
+          "missing_percent": 5.703718123418337,
+          "minimum_observed": 0.0,
+          "maximum_observed": 20.0
+        },
+        {
+          "wave": "5",
+          "column": "orient",
+          "n_observed": 9670,
+          "missing_percent": 5.878917656219584,
+          "minimum_observed": 0.0,
+          "maximum_observed": 4.0
+        },
+        {
+          "wave": "6",
+          "column": "tr20",
+          "n_observed": 9971,
+          "missing_percent": 5.94283558154891,
+          "minimum_observed": 0.0,
+          "maximum_observed": 20.0
+        },
+        {
+          "wave": "6",
+          "column": "orient",
+          "n_observed": 9909,
+          "missing_percent": 6.527686067352137,
+          "minimum_observed": 0.0,
+          "maximum_observed": 4.0
+        },
+        {
+          "wave": "7",
+          "column": "tr20",
+          "n_observed": 9040,
+          "missing_percent": 6.476308710945583,
+          "minimum_observed": 0.0,
+          "maximum_observed": 20.0
+        },
+        {
+          "wave": "7",
+          "column": "orient",
+          "n_observed": 8915,
+          "missing_percent": 7.769501344920339,
+          "minimum_observed": 0.0,
+          "maximum_observed": 4.0
+        },
+        {
+          "wave": "8",
+          "column": "tr20",
+          "n_observed": 7921,
+          "missing_percent": 6.2048549437537,
+          "minimum_observed": 0.0,
+          "maximum_observed": 20.0
+        },
+        {
+          "wave": "8",
+          "column": "orient",
+          "n_observed": 7858,
+          "missing_percent": 6.950858496151568,
+          "minimum_observed": 0.0,
+          "maximum_observed": 4.0
+        },
+        {
+          "wave": "9",
+          "column": "tr20",
+          "n_observed": 8135,
+          "missing_percent": 6.8795787545787555,
+          "minimum_observed": 0.0,
+          "maximum_observed": 20.0
+        },
+        {
+          "wave": "9",
+          "column": "orient",
+          "n_observed": 8077,
+          "missing_percent": 7.543498168498168,
+          "minimum_observed": 0.0,
+          "maximum_observed": 4.0
+        }
+      ],
+      "reliability_by_wave": [
+        {
+          "wave": "1",
+          "n_rows": 12099,
+          "complete_case_n": 11701,
+          "alpha_complete_case": 0.3969852713453499,
+          "omega_one_factor_complete_case": 0.7683618177125132
+        },
+        {
+          "wave": "2",
+          "n_rows": 9432,
+          "complete_case_n": 9225,
+          "alpha_complete_case": 0.44773425874567363,
+          "omega_one_factor_complete_case": 0.7837072306495134
+        },
+        {
+          "wave": "3",
+          "n_rows": 9766,
+          "complete_case_n": 9469,
+          "alpha_complete_case": 0.4553617161009871,
+          "omega_one_factor_complete_case": 0.786048203875798
+        },
+        {
+          "wave": "4",
+          "n_rows": 11050,
+          "complete_case_n": 10538,
+          "alpha_complete_case": 0.42761976328610385,
+          "omega_one_factor_complete_case": 0.777641504863339
+        },
+        {
+          "wave": "5",
+          "n_rows": 10274,
+          "complete_case_n": 9660,
+          "alpha_complete_case": 0.4589279382268474,
+          "omega_one_factor_complete_case": 0.7873694972787499
+        },
+        {
+          "wave": "6",
+          "n_rows": 10601,
+          "complete_case_n": 9904,
+          "alpha_complete_case": 0.48661527780588987,
+          "omega_one_factor_complete_case": 0.7958623475762436
+        },
+        {
+          "wave": "7",
+          "n_rows": 9666,
+          "complete_case_n": 8911,
+          "alpha_complete_case": 0.43581739167828104,
+          "omega_one_factor_complete_case": 0.7803426237697705
+        },
+        {
+          "wave": "8",
+          "n_rows": 8445,
+          "complete_case_n": 7846,
+          "alpha_complete_case": 0.45507023274554714,
+          "omega_one_factor_complete_case": 0.7859994592105527
+        },
+        {
+          "wave": "9",
+          "n_rows": 8736,
+          "complete_case_n": 8059,
+          "alpha_complete_case": 0.4398438806634801,
+          "omega_one_factor_complete_case": 0.7814813293240418
+        }
+      ]
+    },
+    "function": {
+      "domain": "function",
+      "mode": "components",
+      "source_metric_type": "fixed_reference_item_z_mean",
+      "inputs": [
+        "function_adl_fraction",
+        "function_iadl_fraction"
+      ],
+      "implemented_reliability_metric": "complete_case_one_factor_Pearson_omega_and_alpha",
+      "reliability_boundary": "binary-item omega is Pearson-based, not polychoric ordinal omega; alpha equals KR-20 for binary items",
+      "minimum_fraction": 1.0,
+      "required_count": 2,
+      "reference_wave": "1",
+      "reference_n": 12099,
+      "alpha_reference_complete_case": 0.7940263815121109,
+      "omega_reference_complete_case": 0.906629156050799,
+      "composite_reference_mean": -1.1933871947599935e-18,
+      "composite_reference_sd": 0.9106072344336396,
+      "item_parameters": {
+        "function_adl_fraction": {
+          "reference_mean": 0.06705576083305341,
+          "reference_sd": 0.1646841517603328
+        },
+        "function_iadl_fraction": {
+          "reference_mean": 0.057752291376745514,
+          "reference_sd": 0.13835212294224314
+        }
+      },
+      "item_wave_audit": [
+        {
+          "wave": "1",
+          "column": "function_adl_fraction",
+          "n_observed": 11908,
+          "missing_percent": 1.5786428630465328,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "1",
+          "column": "function_iadl_fraction",
+          "n_observed": 11908,
+          "missing_percent": 1.5786428630465328,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "2",
+          "column": "function_adl_fraction",
+          "n_observed": 9429,
+          "missing_percent": 0.031806615776081425,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "2",
+          "column": "function_iadl_fraction",
+          "n_observed": 9429,
+          "missing_percent": 0.031806615776081425,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "3",
+          "column": "function_adl_fraction",
+          "n_observed": 9762,
+          "missing_percent": 0.040958427196395655,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "3",
+          "column": "function_iadl_fraction",
+          "n_observed": 9762,
+          "missing_percent": 0.040958427196395655,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "4",
+          "column": "function_adl_fraction",
+          "n_observed": 11041,
+          "missing_percent": 0.08144796380090498,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "4",
+          "column": "function_iadl_fraction",
+          "n_observed": 11041,
+          "missing_percent": 0.08144796380090498,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "5",
+          "column": "function_adl_fraction",
+          "n_observed": 10266,
+          "missing_percent": 0.07786645902277595,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "5",
+          "column": "function_iadl_fraction",
+          "n_observed": 10266,
+          "missing_percent": 0.07786645902277595,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "6",
+          "column": "function_adl_fraction",
+          "n_observed": 10596,
+          "missing_percent": 0.047165361758324684,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "6",
+          "column": "function_iadl_fraction",
+          "n_observed": 10596,
+          "missing_percent": 0.047165361758324684,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "7",
+          "column": "function_adl_fraction",
+          "n_observed": 9664,
+          "missing_percent": 0.02069108214359611,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "7",
+          "column": "function_iadl_fraction",
+          "n_observed": 9664,
+          "missing_percent": 0.02069108214359611,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "8",
+          "column": "function_adl_fraction",
+          "n_observed": 8443,
+          "missing_percent": 0.023682652457075192,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "8",
+          "column": "function_iadl_fraction",
+          "n_observed": 8443,
+          "missing_percent": 0.023682652457075192,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "9",
+          "column": "function_adl_fraction",
+          "n_observed": 8731,
+          "missing_percent": 0.05723443223443224,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "9",
+          "column": "function_iadl_fraction",
+          "n_observed": 8731,
+          "missing_percent": 0.05723443223443224,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        }
+      ],
+      "reliability_by_wave": [
+        {
+          "wave": "1",
+          "n_rows": 12099,
+          "complete_case_n": 11908,
+          "alpha_complete_case": 0.7940263815121109,
+          "omega_one_factor_complete_case": 0.906629156050799
+        },
+        {
+          "wave": "2",
+          "n_rows": 9432,
+          "complete_case_n": 9429,
+          "alpha_complete_case": 0.8062683823859043,
+          "omega_one_factor_complete_case": 0.9123852804061614
+        },
+        {
+          "wave": "3",
+          "n_rows": 9766,
+          "complete_case_n": 9762,
+          "alpha_complete_case": 0.8216713053250357,
+          "omega_one_factor_complete_case": 0.9195167381064939
+        },
+        {
+          "wave": "4",
+          "n_rows": 11050,
+          "complete_case_n": 11041,
+          "alpha_complete_case": 0.7886802795904737,
+          "omega_one_factor_complete_case": 0.9076234260380386
+        },
+        {
+          "wave": "5",
+          "n_rows": 10274,
+          "complete_case_n": 10266,
+          "alpha_complete_case": 0.817547290222159,
+          "omega_one_factor_complete_case": 0.9187466590150106
+        },
+        {
+          "wave": "6",
+          "n_rows": 10601,
+          "complete_case_n": 10596,
+          "alpha_complete_case": 0.8225171374832023,
+          "omega_one_factor_complete_case": 0.9207905072065554
+        },
+        {
+          "wave": "7",
+          "n_rows": 9666,
+          "complete_case_n": 9664,
+          "alpha_complete_case": 0.8235559989444949,
+          "omega_one_factor_complete_case": 0.9210519630286452
+        },
+        {
+          "wave": "8",
+          "n_rows": 8445,
+          "complete_case_n": 8443,
+          "alpha_complete_case": 0.8202582275605412,
+          "omega_one_factor_complete_case": 0.9195943291482821
+        },
+        {
+          "wave": "9",
+          "n_rows": 8736,
+          "complete_case_n": 8731,
+          "alpha_complete_case": 0.8406371234510153,
+          "omega_one_factor_complete_case": 0.9296056524918548
+        }
+      ]
+    },
+    "mortality_available": false,
+    "death_endpoint_rows_excluded_from_domain_scoring": 0,
+    "death_endpoint_rows_excluded_from_interview_cmm_scoring": 0
+  },
+  {
+    "cohort": "hrs",
+    "release": "Harmonized HRS Version D (1992-2021) with RAND HRS 1992-2020 Version 2",
+    "source": "private_input/hrs.csv",
+    "source_rows": 221899,
+    "included_wave_rows_before_required_field_filter": 221899,
+    "invalid_time_rows_excluded": 0,
+    "missing_id_or_wave_rows_excluded": 0,
+    "rows": 221899,
+    "participants": 36529,
+    "waves": [
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "death"
+    ],
+    "wave_sequence": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15"
+    ],
+    "time_years_min": 2000.0416666666667,
+    "time_years_max": 2021.375,
+    "cmm": [
+      {
+        "disease": "hypertension",
+        "available": true,
+        "column": "hypertension",
+        "persistence": "ever"
+      },
+      {
+        "disease": "diabetes",
+        "available": true,
+        "column": "diabetes",
+        "persistence": "ever"
+      },
+      {
+        "disease": "heart",
+        "available": true,
+        "column": "heart",
+        "persistence": "ever"
+      },
+      {
+        "disease": "stroke",
+        "available": true,
+        "column": "stroke",
+        "persistence": "ever"
+      },
+      {
+        "disease": "cholesterol",
+        "available": true,
+        "column": "cholesterol",
+        "persistence": "ever"
+      }
+    ],
+    "cognition": {
+      "domain": "cognition",
+      "mode": "total",
+      "source_metric_type": "validated_total_score",
+      "inputs": [
+        "cog27"
+      ],
+      "implemented_reliability_metric": "complete_case_one_factor_Pearson_omega_and_alpha",
+      "reliability_boundary": "binary-item omega is Pearson-based, not polychoric ordinal omega; alpha equals KR-20 for binary items",
+      "minimum_fraction": 1.0,
+      "required_count": 1,
+      "reference_wave": "5",
+      "reference_n": 19578,
+      "alpha_reference_complete_case": NaN,
+      "omega_reference_complete_case": NaN,
+      "composite_reference_mean": 15.253996346197763,
+      "composite_reference_sd": 4.754714115851845,
+      "item_parameters": {
+        "cog27": {
+          "reference_mean": 15.253996346197763,
+          "reference_sd": 4.754714115851845
+        }
+      },
+      "item_wave_audit": [
+        {
+          "wave": "10",
+          "column": "cog27",
+          "n_observed": 20652,
+          "missing_percent": 6.272124897885087,
+          "minimum_observed": 0.0,
+          "maximum_observed": 27.0
+        },
+        {
+          "wave": "11",
+          "column": "cog27",
+          "n_observed": 19407,
+          "missing_percent": 5.580422302228277,
+          "minimum_observed": 0.0,
+          "maximum_observed": 27.0
+        },
+        {
+          "wave": "12",
+          "column": "cog27",
+          "n_observed": 17698,
+          "missing_percent": 5.595561956579719,
+          "minimum_observed": 0.0,
+          "maximum_observed": 27.0
+        },
+        {
+          "wave": "13",
+          "column": "cog27",
+          "n_observed": 19971,
+          "missing_percent": 4.499808722264728,
+          "minimum_observed": 0.0,
+          "maximum_observed": 27.0
+        },
+        {
+          "wave": "14",
+          "column": "cog27",
+          "n_observed": 16483,
+          "missing_percent": 3.866791088300478,
+          "minimum_observed": 0.0,
+          "maximum_observed": 27.0
+        },
+        {
+          "wave": "15",
+          "column": "cog27",
+          "n_observed": 15002,
+          "missing_percent": 4.585638872988616,
+          "minimum_observed": 0.0,
+          "maximum_observed": 27.0
+        },
+        {
+          "wave": "5",
+          "column": "cog27",
+          "n_observed": 17516,
+          "missing_percent": 10.532230054142405,
+          "minimum_observed": 0.0,
+          "maximum_observed": 27.0
+        },
+        {
+          "wave": "6",
+          "column": "cog27",
+          "n_observed": 16129,
+          "missing_percent": 11.208367740159646,
+          "minimum_observed": 0.0,
+          "maximum_observed": 27.0
+        },
+        {
+          "wave": "7",
+          "column": "cog27",
+          "n_observed": 18327,
+          "missing_percent": 8.952257936310795,
+          "minimum_observed": 0.0,
+          "maximum_observed": 27.0
+        },
+        {
+          "wave": "8",
+          "column": "cog27",
+          "n_observed": 17209,
+          "missing_percent": 6.822242676918079,
+          "minimum_observed": 0.0,
+          "maximum_observed": 27.0
+        },
+        {
+          "wave": "9",
+          "column": "cog27",
+          "n_observed": 16077,
+          "missing_percent": 6.62136260672591,
+          "minimum_observed": 0.0,
+          "maximum_observed": 27.0
+        },
+        {
+          "wave": "death",
+          "column": "cog27",
+          "n_observed": 0,
+          "missing_percent": 100.0,
+          "minimum_observed": NaN,
+          "maximum_observed": NaN
+        }
+      ],
+      "reliability_by_wave": [
+        {
+          "wave": "10",
+          "n_rows": 22034,
+          "complete_case_n": 20652,
+          "alpha_complete_case": NaN,
+          "omega_one_factor_complete_case": NaN
+        },
+        {
+          "wave": "11",
+          "n_rows": 20554,
+          "complete_case_n": 19407,
+          "alpha_complete_case": NaN,
+          "omega_one_factor_complete_case": NaN
+        },
+        {
+          "wave": "12",
+          "n_rows": 18747,
+          "complete_case_n": 17698,
+          "alpha_complete_case": NaN,
+          "omega_one_factor_complete_case": NaN
+        },
+        {
+          "wave": "13",
+          "n_rows": 20912,
+          "complete_case_n": 19971,
+          "alpha_complete_case": NaN,
+          "omega_one_factor_complete_case": NaN
+        },
+        {
+          "wave": "14",
+          "n_rows": 17146,
+          "complete_case_n": 16483,
+          "alpha_complete_case": NaN,
+          "omega_one_factor_complete_case": NaN
+        },
+        {
+          "wave": "15",
+          "n_rows": 15723,
+          "complete_case_n": 15002,
+          "alpha_complete_case": NaN,
+          "omega_one_factor_complete_case": NaN
+        },
+        {
+          "wave": "5",
+          "n_rows": 19578,
+          "complete_case_n": 17516,
+          "alpha_complete_case": NaN,
+          "omega_one_factor_complete_case": NaN
+        },
+        {
+          "wave": "6",
+          "n_rows": 18165,
+          "complete_case_n": 16129,
+          "alpha_complete_case": NaN,
+          "omega_one_factor_complete_case": NaN
+        },
+        {
+          "wave": "7",
+          "n_rows": 20129,
+          "complete_case_n": 18327,
+          "alpha_complete_case": NaN,
+          "omega_one_factor_complete_case": NaN
+        },
+        {
+          "wave": "8",
+          "n_rows": 18469,
+          "complete_case_n": 17209,
+          "alpha_complete_case": NaN,
+          "omega_one_factor_complete_case": NaN
+        },
+        {
+          "wave": "9",
+          "n_rows": 17217,
+          "complete_case_n": 16077,
+          "alpha_complete_case": NaN,
+          "omega_one_factor_complete_case": NaN
+        },
+        {
+          "wave": "death",
+          "n_rows": 13225,
+          "complete_case_n": 0,
+          "alpha_complete_case": NaN,
+          "omega_one_factor_complete_case": NaN
+        }
+      ]
+    },
+    "function": {
+      "domain": "function",
+      "mode": "components",
+      "source_metric_type": "fixed_reference_item_z_mean",
+      "inputs": [
+        "function_adl_fraction",
+        "function_iadl_fraction"
+      ],
+      "implemented_reliability_metric": "complete_case_one_factor_Pearson_omega_and_alpha",
+      "reliability_boundary": "binary-item omega is Pearson-based, not polychoric ordinal omega; alpha equals KR-20 for binary items",
+      "minimum_fraction": 1.0,
+      "required_count": 2,
+      "reference_wave": "5",
+      "reference_n": 19578,
+      "alpha_reference_complete_case": 0.8417830548385494,
+      "omega_reference_complete_case": 0.9266913239102624,
+      "composite_reference_mean": -0.01222620850681461,
+      "composite_reference_sd": 0.9170818017595046,
+      "item_parameters": {
+        "function_adl_fraction": {
+          "reference_mean": 0.07201867816091954,
+          "reference_sd": 0.19157973195550013
+        },
+        "function_iadl_fraction": {
+          "reference_mean": 0.06699210989385253,
+          "reference_sd": 0.1995362345427726
+        }
+      },
+      "item_wave_audit": [
+        {
+          "wave": "10",
+          "column": "function_adl_fraction",
+          "n_observed": 21811,
+          "missing_percent": 1.0120722519742216,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "10",
+          "column": "function_iadl_fraction",
+          "n_observed": 20588,
+          "missing_percent": 6.562585095761096,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "11",
+          "column": "function_adl_fraction",
+          "n_observed": 20441,
+          "missing_percent": 0.5497713340469008,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "11",
+          "column": "function_iadl_fraction",
+          "n_observed": 19434,
+          "missing_percent": 5.449061010022381,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "12",
+          "column": "function_adl_fraction",
+          "n_observed": 18632,
+          "missing_percent": 0.6134314823705126,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "12",
+          "column": "function_iadl_fraction",
+          "n_observed": 17768,
+          "missing_percent": 5.22216888035419,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "13",
+          "column": "function_adl_fraction",
+          "n_observed": 20793,
+          "missing_percent": 0.5690512624330528,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "13",
+          "column": "function_iadl_fraction",
+          "n_observed": 19921,
+          "missing_percent": 4.738905891354246,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "14",
+          "column": "function_adl_fraction",
+          "n_observed": 17061,
+          "missing_percent": 0.49574244721801,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "14",
+          "column": "function_iadl_fraction",
+          "n_observed": 16370,
+          "missing_percent": 4.525836929896186,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "15",
+          "column": "function_adl_fraction",
+          "n_observed": 15553,
+          "missing_percent": 1.0812185969598678,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "15",
+          "column": "function_iadl_fraction",
+          "n_observed": 15016,
+          "missing_percent": 4.496597341474273,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "5",
+          "column": "function_adl_fraction",
+          "n_observed": 19488,
+          "missing_percent": 0.4596996628869139,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "5",
+          "column": "function_iadl_fraction",
+          "n_observed": 17617,
+          "missing_percent": 10.016344876902645,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "6",
+          "column": "function_adl_fraction",
+          "n_observed": 18083,
+          "missing_percent": 0.45141756124415083,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "6",
+          "column": "function_iadl_fraction",
+          "n_observed": 16396,
+          "missing_percent": 9.73850812001101,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "7",
+          "column": "function_adl_fraction",
+          "n_observed": 20039,
+          "missing_percent": 0.44711610114759803,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "7",
+          "column": "function_iadl_fraction",
+          "n_observed": 18139,
+          "missing_percent": 9.886233792041335,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "8",
+          "column": "function_adl_fraction",
+          "n_observed": 18382,
+          "missing_percent": 0.47105961340624836,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "8",
+          "column": "function_iadl_fraction",
+          "n_observed": 16789,
+          "missing_percent": 9.096323569224104,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "9",
+          "column": "function_adl_fraction",
+          "n_observed": 17135,
+          "missing_percent": 0.4762734506592321,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "9",
+          "column": "function_iadl_fraction",
+          "n_observed": 15690,
+          "missing_percent": 8.869140965324968,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "death",
+          "column": "function_adl_fraction",
+          "n_observed": 0,
+          "missing_percent": 100.0,
+          "minimum_observed": NaN,
+          "maximum_observed": NaN
+        },
+        {
+          "wave": "death",
+          "column": "function_iadl_fraction",
+          "n_observed": 0,
+          "missing_percent": 100.0,
+          "minimum_observed": NaN,
+          "maximum_observed": NaN
+        }
+      ],
+      "reliability_by_wave": [
+        {
+          "wave": "10",
+          "n_rows": 22034,
+          "complete_case_n": 20521,
+          "alpha_complete_case": 0.8272186812833056,
+          "omega_one_factor_complete_case": 0.9205650498042386
+        },
+        {
+          "wave": "11",
+          "n_rows": 20554,
+          "complete_case_n": 19358,
+          "alpha_complete_case": 0.8349571171001249,
+          "omega_one_factor_complete_case": 0.9237777339388321
+        },
+        {
+          "wave": "12",
+          "n_rows": 18747,
+          "complete_case_n": 17694,
+          "alpha_complete_case": 0.8284002458937971,
+          "omega_one_factor_complete_case": 0.9210352071374993
+        },
+        {
+          "wave": "13",
+          "n_rows": 20912,
+          "complete_case_n": 19853,
+          "alpha_complete_case": 0.8307659879506455,
+          "omega_one_factor_complete_case": 0.9222529597391895
+        },
+        {
+          "wave": "14",
+          "n_rows": 17146,
+          "complete_case_n": 16323,
+          "alpha_complete_case": 0.8076936472790583,
+          "omega_one_factor_complete_case": 0.9127703763873425
+        },
+        {
+          "wave": "15",
+          "n_rows": 15723,
+          "complete_case_n": 14941,
+          "alpha_complete_case": 0.8118171104336183,
+          "omega_one_factor_complete_case": 0.9144272553176251
+        },
+        {
+          "wave": "5",
+          "n_rows": 19578,
+          "complete_case_n": 17564,
+          "alpha_complete_case": 0.8417830548385494,
+          "omega_one_factor_complete_case": 0.9266913239102624
+        },
+        {
+          "wave": "6",
+          "n_rows": 18165,
+          "complete_case_n": 16345,
+          "alpha_complete_case": 0.8461599666845965,
+          "omega_one_factor_complete_case": 0.9286414709893391
+        },
+        {
+          "wave": "7",
+          "n_rows": 20129,
+          "complete_case_n": 18081,
+          "alpha_complete_case": 0.8385557567811177,
+          "omega_one_factor_complete_case": 0.9253074790217503
+        },
+        {
+          "wave": "8",
+          "n_rows": 18469,
+          "complete_case_n": 16726,
+          "alpha_complete_case": 0.8423152814119734,
+          "omega_one_factor_complete_case": 0.9269195877360942
+        },
+        {
+          "wave": "9",
+          "n_rows": 17217,
+          "complete_case_n": 15630,
+          "alpha_complete_case": 0.8369830833466307,
+          "omega_one_factor_complete_case": 0.9246353320786649
+        },
+        {
+          "wave": "death",
+          "n_rows": 13225,
+          "complete_case_n": 0,
+          "alpha_complete_case": NaN,
+          "omega_one_factor_complete_case": NaN
+        }
+      ]
+    },
+    "mortality_available": true,
+    "death_endpoint_rows_excluded_from_domain_scoring": 13225,
+    "death_endpoint_rows_excluded_from_interview_cmm_scoring": 13225
+  },
+  {
+    "cohort": "klosa",
+    "release": "Harmonized KLoSA Version E.2 (2006-2020), July 2023; DOI 10.34729/815E-WN35",
+    "source": "private_input/klosa.csv",
+    "source_rows": 45949,
+    "included_wave_rows_before_required_field_filter": 39461,
+    "invalid_time_rows_excluded": 0,
+    "missing_id_or_wave_rows_excluded": 0,
+    "rows": 39461,
+    "participants": 9216,
+    "waves": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "death"
+    ],
+    "wave_sequence": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "time_years_min": 2010.7916666666667,
+    "time_years_max": 2020.875,
+    "cmm": [
+      {
+        "disease": "hypertension",
+        "available": true,
+        "column": "hypertension",
+        "persistence": "ever"
+      },
+      {
+        "disease": "diabetes",
+        "available": true,
+        "column": "diabetes",
+        "persistence": "ever"
+      },
+      {
+        "disease": "heart",
+        "available": true,
+        "column": "heart",
+        "persistence": "ever"
+      },
+      {
+        "disease": "stroke",
+        "available": true,
+        "column": "stroke",
+        "persistence": "ever"
+      },
+      {
+        "disease": "cholesterol",
+        "available": false,
+        "column": null
+      }
+    ],
+    "cognition": {
+      "domain": "cognition",
+      "mode": "total",
+      "source_metric_type": "validated_total_score",
+      "inputs": [
+        "klosa_mmse30"
+      ],
+      "implemented_reliability_metric": "complete_case_one_factor_Pearson_omega_and_alpha",
+      "reliability_boundary": "binary-item omega is Pearson-based, not polychoric ordinal omega; alpha equals KR-20 for binary items",
+      "minimum_fraction": 1.0,
+      "required_count": 1,
+      "reference_wave": "3",
+      "reference_n": 7920,
+      "alpha_reference_complete_case": NaN,
+      "omega_reference_complete_case": NaN,
+      "composite_reference_mean": 24.877804487179485,
+      "composite_reference_sd": 5.62319310255257,
+      "item_parameters": {
+        "klosa_mmse30": {
+          "reference_mean": 24.877804487179485,
+          "reference_sd": 5.62319310255257
+        }
+      },
+      "item_wave_audit": [
+        {
+          "wave": "3",
+          "column": "klosa_mmse30",
+          "n_observed": 7488,
+          "missing_percent": 5.454545454545454,
+          "minimum_observed": 0.0,
+          "maximum_observed": 30.0
+        },
+        {
+          "wave": "4",
+          "column": "klosa_mmse30",
+          "n_observed": 7114,
+          "missing_percent": 4.969275981832755,
+          "minimum_observed": 0.0,
+          "maximum_observed": 30.0
+        },
+        {
+          "wave": "5",
+          "column": "klosa_mmse30",
+          "n_observed": 7551,
+          "missing_percent": 5.006919109321927,
+          "minimum_observed": 0.0,
+          "maximum_observed": 30.0
+        },
+        {
+          "wave": "6",
+          "column": "klosa_mmse30",
+          "n_observed": 7132,
+          "missing_percent": 4.779706275033377,
+          "minimum_observed": 0.0,
+          "maximum_observed": 30.0
+        },
+        {
+          "wave": "7",
+          "column": "klosa_mmse30",
+          "n_observed": 6554,
+          "missing_percent": 5.561959654178674,
+          "minimum_observed": 0.0,
+          "maximum_observed": 30.0
+        },
+        {
+          "wave": "death",
+          "column": "klosa_mmse30",
+          "n_observed": 0,
+          "missing_percent": 100.0,
+          "minimum_observed": NaN,
+          "maximum_observed": NaN
+        }
+      ],
+      "reliability_by_wave": [
+        {
+          "wave": "3",
+          "n_rows": 7920,
+          "complete_case_n": 7488,
+          "alpha_complete_case": NaN,
+          "omega_one_factor_complete_case": NaN
+        },
+        {
+          "wave": "4",
+          "n_rows": 7486,
+          "complete_case_n": 7114,
+          "alpha_complete_case": NaN,
+          "omega_one_factor_complete_case": NaN
+        },
+        {
+          "wave": "5",
+          "n_rows": 7949,
+          "complete_case_n": 7551,
+          "alpha_complete_case": NaN,
+          "omega_one_factor_complete_case": NaN
+        },
+        {
+          "wave": "6",
+          "n_rows": 7490,
+          "complete_case_n": 7132,
+          "alpha_complete_case": NaN,
+          "omega_one_factor_complete_case": NaN
+        },
+        {
+          "wave": "7",
+          "n_rows": 6940,
+          "complete_case_n": 6554,
+          "alpha_complete_case": NaN,
+          "omega_one_factor_complete_case": NaN
+        },
+        {
+          "wave": "death",
+          "n_rows": 1676,
+          "complete_case_n": 0,
+          "alpha_complete_case": NaN,
+          "omega_one_factor_complete_case": NaN
+        }
+      ]
+    },
+    "function": {
+      "domain": "function",
+      "mode": "components",
+      "source_metric_type": "fixed_reference_item_z_mean",
+      "inputs": [
+        "function_adl_fraction",
+        "function_iadl_fraction"
+      ],
+      "implemented_reliability_metric": "complete_case_one_factor_Pearson_omega_and_alpha",
+      "reliability_boundary": "binary-item omega is Pearson-based, not polychoric ordinal omega; alpha equals KR-20 for binary items",
+      "minimum_fraction": 1.0,
+      "required_count": 2,
+      "reference_wave": "3",
+      "reference_n": 7920,
+      "alpha_reference_complete_case": 0.9007254441905841,
+      "omega_reference_complete_case": 0.9527100657059419,
+      "composite_reference_mean": -3.140024716111554e-18,
+      "composite_reference_sd": 0.9537771466118861,
+      "item_parameters": {
+        "function_adl_fraction": {
+          "reference_mean": 0.030555555555555555,
+          "reference_sd": 0.15875555773274683
+        },
+        "function_iadl_fraction": {
+          "reference_mean": 0.06186868686868687,
+          "reference_sd": 0.20146086729169863
+        }
+      },
+      "item_wave_audit": [
+        {
+          "wave": "3",
+          "column": "function_adl_fraction",
+          "n_observed": 7920,
+          "missing_percent": 0.0,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "3",
+          "column": "function_iadl_fraction",
+          "n_observed": 7920,
+          "missing_percent": 0.0,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "4",
+          "column": "function_adl_fraction",
+          "n_observed": 7486,
+          "missing_percent": 0.0,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "4",
+          "column": "function_iadl_fraction",
+          "n_observed": 7485,
+          "missing_percent": 0.01335826876836762,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "5",
+          "column": "function_adl_fraction",
+          "n_observed": 7949,
+          "missing_percent": 0.0,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "5",
+          "column": "function_iadl_fraction",
+          "n_observed": 7949,
+          "missing_percent": 0.0,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "6",
+          "column": "function_adl_fraction",
+          "n_observed": 7490,
+          "missing_percent": 0.0,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "6",
+          "column": "function_iadl_fraction",
+          "n_observed": 7489,
+          "missing_percent": 0.01335113484646195,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "7",
+          "column": "function_adl_fraction",
+          "n_observed": 6940,
+          "missing_percent": 0.0,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "7",
+          "column": "function_iadl_fraction",
+          "n_observed": 6940,
+          "missing_percent": 0.0,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "death",
+          "column": "function_adl_fraction",
+          "n_observed": 0,
+          "missing_percent": 100.0,
+          "minimum_observed": NaN,
+          "maximum_observed": NaN
+        },
+        {
+          "wave": "death",
+          "column": "function_iadl_fraction",
+          "n_observed": 0,
+          "missing_percent": 100.0,
+          "minimum_observed": NaN,
+          "maximum_observed": NaN
+        }
+      ],
+      "reliability_by_wave": [
+        {
+          "wave": "3",
+          "n_rows": 7920,
+          "complete_case_n": 7920,
+          "alpha_complete_case": 0.9007254441905841,
+          "omega_one_factor_complete_case": 0.9527100657059419
+        },
+        {
+          "wave": "4",
+          "n_rows": 7486,
+          "complete_case_n": 7485,
+          "alpha_complete_case": 0.8963184164101095,
+          "omega_one_factor_complete_case": 0.9507143265549475
+        },
+        {
+          "wave": "5",
+          "n_rows": 7949,
+          "complete_case_n": 7949,
+          "alpha_complete_case": 0.8856100713820076,
+          "omega_one_factor_complete_case": 0.9460476047538797
+        },
+        {
+          "wave": "6",
+          "n_rows": 7490,
+          "complete_case_n": 7489,
+          "alpha_complete_case": 0.8774742602424139,
+          "omega_one_factor_complete_case": 0.9430264367673936
+        },
+        {
+          "wave": "7",
+          "n_rows": 6940,
+          "complete_case_n": 6940,
+          "alpha_complete_case": 0.8923035393901437,
+          "omega_one_factor_complete_case": 0.9489185916630439
+        },
+        {
+          "wave": "death",
+          "n_rows": 1676,
+          "complete_case_n": 0,
+          "alpha_complete_case": NaN,
+          "omega_one_factor_complete_case": NaN
+        }
+      ]
+    },
+    "mortality_available": true,
+    "death_endpoint_rows_excluded_from_domain_scoring": 1676,
+    "death_endpoint_rows_excluded_from_interview_cmm_scoring": 1676
+  },
+  {
+    "cohort": "mhas",
+    "release": "Harmonized MHAS Version C.2 (2001-2018), August 2023",
+    "source": "private_input/mhas.csv",
+    "source_rows": 81921,
+    "included_wave_rows_before_required_field_filter": 81921,
+    "invalid_time_rows_excluded": 12,
+    "missing_id_or_wave_rows_excluded": 0,
+    "rows": 81909,
+    "participants": 26837,
+    "waves": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "death"
+    ],
+    "wave_sequence": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "time_years_min": 2001.0416666666667,
+    "time_years_max": 2019.125,
+    "cmm": [
+      {
+        "disease": "hypertension",
+        "available": true,
+        "column": "hypertension",
+        "persistence": "ever"
+      },
+      {
+        "disease": "diabetes",
+        "available": true,
+        "column": "diabetes",
+        "persistence": "ever"
+      },
+      {
+        "disease": "heart",
+        "available": true,
+        "column": "heart",
+        "persistence": "ever"
+      },
+      {
+        "disease": "stroke",
+        "available": true,
+        "column": "stroke",
+        "persistence": "ever"
+      },
+      {
+        "disease": "cholesterol",
+        "available": false,
+        "column": null
+      }
+    ],
+    "cognition": {
+      "domain": "cognition",
+      "mode": "components",
+      "source_metric_type": "fixed_reference_item_z_mean",
+      "inputs": [
+        "mhas_memory",
+        "vscan"
+      ],
+      "implemented_reliability_metric": "complete_case_one_factor_Pearson_omega_and_alpha",
+      "reliability_boundary": "binary-item omega is Pearson-based, not polychoric ordinal omega; alpha equals KR-20 for binary items",
+      "minimum_fraction": 1.0,
+      "required_count": 2,
+      "reference_wave": "1",
+      "reference_n": 15186,
+      "alpha_reference_complete_case": 0.6076891373155919,
+      "omega_reference_complete_case": 0.8360117538219101,
+      "composite_reference_mean": 2.0458256680673276e-16,
+      "composite_reference_sd": 0.8474847542821898,
+      "item_parameters": {
+        "mhas_memory": {
+          "reference_mean": 4.943370102419798,
+          "reference_sd": 1.4459518846685493
+        },
+        "vscan": {
+          "reference_mean": 24.766007735281477,
+          "reference_sd": 15.921906122337367
+        }
+      },
+      "item_wave_audit": [
+        {
+          "wave": "1",
+          "column": "mhas_memory",
+          "n_observed": 13962,
+          "missing_percent": 8.060055314105096,
+          "minimum_observed": 0.0,
+          "maximum_observed": 8.0
+        },
+        {
+          "wave": "1",
+          "column": "vscan",
+          "n_observed": 13962,
+          "missing_percent": 8.060055314105096,
+          "minimum_observed": 0.0,
+          "maximum_observed": 60.0
+        },
+        {
+          "wave": "2",
+          "column": "mhas_memory",
+          "n_observed": 12495,
+          "missing_percent": 8.822241681260946,
+          "minimum_observed": 0.0,
+          "maximum_observed": 8.0
+        },
+        {
+          "wave": "2",
+          "column": "vscan",
+          "n_observed": 12495,
+          "missing_percent": 8.822241681260946,
+          "minimum_observed": 0.0,
+          "maximum_observed": 60.0
+        },
+        {
+          "wave": "3",
+          "column": "mhas_memory",
+          "n_observed": 14436,
+          "missing_percent": 8.11533320603399,
+          "minimum_observed": 0.0,
+          "maximum_observed": 8.0
+        },
+        {
+          "wave": "3",
+          "column": "vscan",
+          "n_observed": 14436,
+          "missing_percent": 8.11533320603399,
+          "minimum_observed": 0.0,
+          "maximum_observed": 60.0
+        },
+        {
+          "wave": "4",
+          "column": "mhas_memory",
+          "n_observed": 13850,
+          "missing_percent": 6.285946275120102,
+          "minimum_observed": 0.0,
+          "maximum_observed": 8.0
+        },
+        {
+          "wave": "4",
+          "column": "vscan",
+          "n_observed": 13850,
+          "missing_percent": 6.285946275120102,
+          "minimum_observed": 0.0,
+          "maximum_observed": 60.0
+        },
+        {
+          "wave": "5",
+          "column": "mhas_memory",
+          "n_observed": 15786,
+          "missing_percent": 7.759728876942853,
+          "minimum_observed": 0.0,
+          "maximum_observed": 8.0
+        },
+        {
+          "wave": "5",
+          "column": "vscan",
+          "n_observed": 15786,
+          "missing_percent": 7.759728876942853,
+          "minimum_observed": 0.0,
+          "maximum_observed": 60.0
+        },
+        {
+          "wave": "death",
+          "column": "mhas_memory",
+          "n_observed": 0,
+          "missing_percent": 100.0,
+          "minimum_observed": NaN,
+          "maximum_observed": NaN
+        },
+        {
+          "wave": "death",
+          "column": "vscan",
+          "n_observed": 0,
+          "missing_percent": 100.0,
+          "minimum_observed": NaN,
+          "maximum_observed": NaN
+        }
+      ],
+      "reliability_by_wave": [
+        {
+          "wave": "1",
+          "n_rows": 15186,
+          "complete_case_n": 13962,
+          "alpha_complete_case": 0.6076891373155919,
+          "omega_one_factor_complete_case": 0.8360117538219101
+        },
+        {
+          "wave": "2",
+          "n_rows": 13704,
+          "complete_case_n": 12495,
+          "alpha_complete_case": 0.649113696519334,
+          "omega_one_factor_complete_case": 0.85117237233114
+        },
+        {
+          "wave": "3",
+          "n_rows": 15711,
+          "complete_case_n": 14436,
+          "alpha_complete_case": 0.6554135221036459,
+          "omega_one_factor_complete_case": 0.8533623777122507
+        },
+        {
+          "wave": "4",
+          "n_rows": 14779,
+          "complete_case_n": 13850,
+          "alpha_complete_case": 0.6760718527970064,
+          "omega_one_factor_complete_case": 0.8609439180774165
+        },
+        {
+          "wave": "5",
+          "n_rows": 17114,
+          "complete_case_n": 15786,
+          "alpha_complete_case": 0.6326079240657316,
+          "omega_one_factor_complete_case": 0.8448333560401592
+        },
+        {
+          "wave": "death",
+          "n_rows": 5415,
+          "complete_case_n": 0,
+          "alpha_complete_case": NaN,
+          "omega_one_factor_complete_case": NaN
+        }
+      ]
+    },
+    "function": {
+      "domain": "function",
+      "mode": "components",
+      "source_metric_type": "fixed_reference_item_z_mean",
+      "inputs": [
+        "function_adl_fraction",
+        "function_iadl_fraction"
+      ],
+      "implemented_reliability_metric": "complete_case_one_factor_Pearson_omega_and_alpha",
+      "reliability_boundary": "binary-item omega is Pearson-based, not polychoric ordinal omega; alpha equals KR-20 for binary items",
+      "minimum_fraction": 1.0,
+      "required_count": 2,
+      "reference_wave": "1",
+      "reference_n": 15186,
+      "alpha_reference_complete_case": 0.8101153639079741,
+      "omega_reference_complete_case": 0.9133213961963771,
+      "composite_reference_mean": -0.006846637922582543,
+      "composite_reference_sd": 0.9103914453121471,
+      "item_parameters": {
+        "function_adl_fraction": {
+          "reference_mean": 0.03813477737665463,
+          "reference_sd": 0.140286608773436
+        },
+        "function_iadl_fraction": {
+          "reference_mean": 0.035405610310841544,
+          "reference_sd": 0.1455328656908693
+        }
+      },
+      "item_wave_audit": [
+        {
+          "wave": "1",
+          "column": "function_adl_fraction",
+          "n_observed": 13850,
+          "missing_percent": 8.79757671539576,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "1",
+          "column": "function_iadl_fraction",
+          "n_observed": 13190,
+          "missing_percent": 13.143684973001449,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "2",
+          "column": "function_adl_fraction",
+          "n_observed": 12468,
+          "missing_percent": 9.019264448336251,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "2",
+          "column": "function_iadl_fraction",
+          "n_observed": 11794,
+          "missing_percent": 13.937536485697608,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "3",
+          "column": "function_adl_fraction",
+          "n_observed": 14350,
+          "missing_percent": 8.662720386990006,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "3",
+          "column": "function_iadl_fraction",
+          "n_observed": 13487,
+          "missing_percent": 14.155687098211445,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "4",
+          "column": "function_adl_fraction",
+          "n_observed": 13768,
+          "missing_percent": 6.84078760403275,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "4",
+          "column": "function_iadl_fraction",
+          "n_observed": 12914,
+          "missing_percent": 12.619257053927871,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "5",
+          "column": "function_adl_fraction",
+          "n_observed": 15725,
+          "missing_percent": 8.116162206380741,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "5",
+          "column": "function_iadl_fraction",
+          "n_observed": 15180,
+          "missing_percent": 11.300689493981537,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "death",
+          "column": "function_adl_fraction",
+          "n_observed": 0,
+          "missing_percent": 100.0,
+          "minimum_observed": NaN,
+          "maximum_observed": NaN
+        },
+        {
+          "wave": "death",
+          "column": "function_iadl_fraction",
+          "n_observed": 0,
+          "missing_percent": 100.0,
+          "minimum_observed": NaN,
+          "maximum_observed": NaN
+        }
+      ],
+      "reliability_by_wave": [
+        {
+          "wave": "1",
+          "n_rows": 15186,
+          "complete_case_n": 12962,
+          "alpha_complete_case": 0.8101153639079741,
+          "omega_one_factor_complete_case": 0.9133213961963771
+        },
+        {
+          "wave": "2",
+          "n_rows": 13704,
+          "complete_case_n": 11752,
+          "alpha_complete_case": 0.7826873091811857,
+          "omega_one_factor_complete_case": 0.9024251729001942
+        },
+        {
+          "wave": "3",
+          "n_rows": 15711,
+          "complete_case_n": 13427,
+          "alpha_complete_case": 0.7764392855121782,
+          "omega_one_factor_complete_case": 0.8995214866584138
+        },
+        {
+          "wave": "4",
+          "n_rows": 14779,
+          "complete_case_n": 12890,
+          "alpha_complete_case": 0.7684377802114066,
+          "omega_one_factor_complete_case": 0.8963518303716542
+        },
+        {
+          "wave": "5",
+          "n_rows": 17114,
+          "complete_case_n": 15153,
+          "alpha_complete_case": 0.7781494704828769,
+          "omega_one_factor_complete_case": 0.9014073779566599
+        },
+        {
+          "wave": "death",
+          "n_rows": 5415,
+          "complete_case_n": 0,
+          "alpha_complete_case": NaN,
+          "omega_one_factor_complete_case": NaN
+        }
+      ]
+    },
+    "mortality_available": true,
+    "death_endpoint_rows_excluded_from_domain_scoring": 5415,
+    "death_endpoint_rows_excluded_from_interview_cmm_scoring": 5415
+  },
+  {
+    "cohort": "share",
+    "release": "Harmonized SHARE Version F.2 (2004-2020), April 2024; source SHARE Release 9.0.0",
+    "source": "private_input/share.csv",
+    "source_rows": 345562,
+    "included_wave_rows_before_required_field_filter": 278014,
+    "invalid_time_rows_excluded": 0,
+    "missing_id_or_wave_rows_excluded": 0,
+    "rows": 273302,
+    "participants": 117831,
+    "waves": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "death"
+    ],
+    "wave_sequence": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "time_years_min": 2010.375,
+    "time_years_max": 2020.9583333333333,
+    "cmm": [
+      {
+        "disease": "hypertension",
+        "available": true,
+        "column": "hypertension",
+        "persistence": "ever"
+      },
+      {
+        "disease": "diabetes",
+        "available": true,
+        "column": "diabetes",
+        "persistence": "ever"
+      },
+      {
+        "disease": "heart",
+        "available": true,
+        "column": "heart",
+        "persistence": "ever"
+      },
+      {
+        "disease": "stroke",
+        "available": true,
+        "column": "stroke",
+        "persistence": "ever"
+      },
+      {
+        "disease": "cholesterol",
+        "available": true,
+        "column": "cholesterol",
+        "persistence": "ever"
+      }
+    ],
+    "cognition": {
+      "domain": "cognition",
+      "mode": "components",
+      "source_metric_type": "fixed_reference_item_z_mean",
+      "inputs": [
+        "share_memory",
+        "ser7",
+        "verbf"
+      ],
+      "implemented_reliability_metric": "complete_case_one_factor_Pearson_omega_and_alpha",
+      "reliability_boundary": "binary-item omega is Pearson-based, not polychoric ordinal omega; alpha equals KR-20 for binary items",
+      "minimum_fraction": 1.0,
+      "required_count": 3,
+      "reference_wave": "4",
+      "reference_n": 57982,
+      "alpha_reference_complete_case": 0.6512762952898266,
+      "omega_reference_complete_case": 0.8121210869702312,
+      "composite_reference_mean": 0.03618113502241067,
+      "composite_reference_sd": 0.7504949646008163,
+      "item_parameters": {
+        "share_memory": {
+          "reference_mean": 4.467654005291851,
+          "reference_sd": 1.884267982305571
+        },
+        "ser7": {
+          "reference_mean": 4.203303192470935,
+          "reference_sd": 1.2803744383880045
+        },
+        "verbf": {
+          "reference_mean": 19.703748574686433,
+          "reference_sd": 7.732250289365082
+        }
+      },
+      "item_wave_audit": [
+        {
+          "wave": "4",
+          "column": "share_memory",
+          "n_observed": 56313,
+          "missing_percent": 2.8784795281294193,
+          "minimum_observed": 0.0,
+          "maximum_observed": 10.0
+        },
+        {
+          "wave": "4",
+          "column": "ser7",
+          "n_observed": 54190,
+          "missing_percent": 6.539960677451623,
+          "minimum_observed": 0.0,
+          "maximum_observed": 5.0
+        },
+        {
+          "wave": "4",
+          "column": "verbf",
+          "n_observed": 56128,
+          "missing_percent": 3.197544065399607,
+          "minimum_observed": 0.0,
+          "maximum_observed": 100.0
+        },
+        {
+          "wave": "5",
+          "column": "share_memory",
+          "n_observed": 63724,
+          "missing_percent": 3.5040431266846364,
+          "minimum_observed": 0.0,
+          "maximum_observed": 10.0
+        },
+        {
+          "wave": "5",
+          "column": "ser7",
+          "n_observed": 61748,
+          "missing_percent": 6.496259729246797,
+          "minimum_observed": 0.0,
+          "maximum_observed": 5.0
+        },
+        {
+          "wave": "5",
+          "column": "verbf",
+          "n_observed": 63754,
+          "missing_percent": 3.458614736969624,
+          "minimum_observed": 0.0,
+          "maximum_observed": 100.0
+        },
+        {
+          "wave": "6",
+          "column": "share_memory",
+          "n_observed": 64480,
+          "missing_percent": 5.253104106972302,
+          "minimum_observed": 0.0,
+          "maximum_observed": 10.0
+        },
+        {
+          "wave": "6",
+          "column": "ser7",
+          "n_observed": 62518,
+          "missing_percent": 8.13606641686871,
+          "minimum_observed": 0.0,
+          "maximum_observed": 5.0
+        },
+        {
+          "wave": "6",
+          "column": "verbf",
+          "n_observed": 64641,
+          "missing_percent": 5.016530747189773,
+          "minimum_observed": 0.0,
+          "maximum_observed": 97.0
+        },
+        {
+          "wave": "7",
+          "column": "share_memory",
+          "n_observed": 13524,
+          "missing_percent": 3.0398623458560365,
+          "minimum_observed": 0.0,
+          "maximum_observed": 10.0
+        },
+        {
+          "wave": "7",
+          "column": "ser7",
+          "n_observed": 12944,
+          "missing_percent": 7.198164611413822,
+          "minimum_observed": 0.0,
+          "maximum_observed": 5.0
+        },
+        {
+          "wave": "7",
+          "column": "verbf",
+          "n_observed": 13522,
+          "missing_percent": 3.0542013191855464,
+          "minimum_observed": 0.0,
+          "maximum_observed": 100.0
+        },
+        {
+          "wave": "8",
+          "column": "share_memory",
+          "n_observed": 52190,
+          "missing_percent": 2.80286805102896,
+          "minimum_observed": 0.0,
+          "maximum_observed": 10.0
+        },
+        {
+          "wave": "8",
+          "column": "ser7",
+          "n_observed": 50750,
+          "missing_percent": 5.484682000186237,
+          "minimum_observed": 0.0,
+          "maximum_observed": 5.0
+        },
+        {
+          "wave": "8",
+          "column": "verbf",
+          "n_observed": 52215,
+          "missing_percent": 2.756308781078313,
+          "minimum_observed": 0.0,
+          "maximum_observed": 100.0
+        },
+        {
+          "wave": "death",
+          "column": "share_memory",
+          "n_observed": 0,
+          "missing_percent": 100.0,
+          "minimum_observed": NaN,
+          "maximum_observed": NaN
+        },
+        {
+          "wave": "death",
+          "column": "ser7",
+          "n_observed": 0,
+          "missing_percent": 100.0,
+          "minimum_observed": NaN,
+          "maximum_observed": NaN
+        },
+        {
+          "wave": "death",
+          "column": "verbf",
+          "n_observed": 0,
+          "missing_percent": 100.0,
+          "minimum_observed": NaN,
+          "maximum_observed": NaN
+        }
+      ],
+      "reliability_by_wave": [
+        {
+          "wave": "4",
+          "n_rows": 57982,
+          "complete_case_n": 53924,
+          "alpha_complete_case": 0.6512762952898266,
+          "omega_one_factor_complete_case": 0.8121210869702312
+        },
+        {
+          "wave": "5",
+          "n_rows": 66038,
+          "complete_case_n": 61322,
+          "alpha_complete_case": 0.6584964110220263,
+          "omega_one_factor_complete_case": 0.8146532762797091
+        },
+        {
+          "wave": "6",
+          "n_rows": 68055,
+          "complete_case_n": 62198,
+          "alpha_complete_case": 0.6605182652144799,
+          "omega_one_factor_complete_case": 0.8158717101041203
+        },
+        {
+          "wave": "7",
+          "n_rows": 13948,
+          "complete_case_n": 12879,
+          "alpha_complete_case": 0.6723821835829977,
+          "omega_one_factor_complete_case": 0.8226119552244774
+        },
+        {
+          "wave": "8",
+          "n_rows": 53695,
+          "complete_case_n": 50473,
+          "alpha_complete_case": 0.6602252833737928,
+          "omega_one_factor_complete_case": 0.8159129453709771
+        },
+        {
+          "wave": "death",
+          "n_rows": 13584,
+          "complete_case_n": 0,
+          "alpha_complete_case": NaN,
+          "omega_one_factor_complete_case": NaN
+        }
+      ]
+    },
+    "function": {
+      "domain": "function",
+      "mode": "components",
+      "source_metric_type": "fixed_reference_item_z_mean",
+      "inputs": [
+        "function_adl_fraction",
+        "function_iadl_fraction"
+      ],
+      "implemented_reliability_metric": "complete_case_one_factor_Pearson_omega_and_alpha",
+      "reliability_boundary": "binary-item omega is Pearson-based, not polychoric ordinal omega; alpha equals KR-20 for binary items",
+      "minimum_fraction": 1.0,
+      "required_count": 2,
+      "reference_wave": "4",
+      "reference_n": 57982,
+      "alpha_reference_complete_case": 0.8200445468850255,
+      "omega_reference_complete_case": 0.9174499401545854,
+      "composite_reference_mean": -2.7600591823650408e-17,
+      "composite_reference_sd": 0.9205919949715464,
+      "item_parameters": {
+        "function_adl_fraction": {
+          "reference_mean": 0.04375195088960565,
+          "reference_sd": 0.14798487752772807
+        },
+        "function_iadl_fraction": {
+          "reference_mean": 0.04733580735037399,
+          "reference_sd": 0.15457667738332784
+        }
+      },
+      "item_wave_audit": [
+        {
+          "wave": "4",
+          "column": "function_adl_fraction",
+          "n_observed": 57666,
+          "missing_percent": 0.5449967231209686,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "4",
+          "column": "function_iadl_fraction",
+          "n_observed": 57666,
+          "missing_percent": 0.5449967231209686,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "5",
+          "column": "function_adl_fraction",
+          "n_observed": 65854,
+          "missing_percent": 0.27862745691874374,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "5",
+          "column": "function_iadl_fraction",
+          "n_observed": 65854,
+          "missing_percent": 0.27862745691874374,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "6",
+          "column": "function_adl_fraction",
+          "n_observed": 67903,
+          "missing_percent": 0.22334876203071044,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "6",
+          "column": "function_iadl_fraction",
+          "n_observed": 67903,
+          "missing_percent": 0.22334876203071044,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "7",
+          "column": "function_adl_fraction",
+          "n_observed": 13932,
+          "missing_percent": 0.11471178663607685,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "7",
+          "column": "function_iadl_fraction",
+          "n_observed": 13932,
+          "missing_percent": 0.11471178663607685,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "8",
+          "column": "function_adl_fraction",
+          "n_observed": 53524,
+          "missing_percent": 0.31846540646242666,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "8",
+          "column": "function_iadl_fraction",
+          "n_observed": 53524,
+          "missing_percent": 0.31846540646242666,
+          "minimum_observed": 0.0,
+          "maximum_observed": 1.0
+        },
+        {
+          "wave": "death",
+          "column": "function_adl_fraction",
+          "n_observed": 0,
+          "missing_percent": 100.0,
+          "minimum_observed": NaN,
+          "maximum_observed": NaN
+        },
+        {
+          "wave": "death",
+          "column": "function_iadl_fraction",
+          "n_observed": 0,
+          "missing_percent": 100.0,
+          "minimum_observed": NaN,
+          "maximum_observed": NaN
+        }
+      ],
+      "reliability_by_wave": [
+        {
+          "wave": "4",
+          "n_rows": 57982,
+          "complete_case_n": 57666,
+          "alpha_complete_case": 0.8200445468850255,
+          "omega_one_factor_complete_case": 0.9174499401545854
+        },
+        {
+          "wave": "5",
+          "n_rows": 66038,
+          "complete_case_n": 65854,
+          "alpha_complete_case": 0.8437740966784824,
+          "omega_one_factor_complete_case": 0.9276341894104354
+        },
+        {
+          "wave": "6",
+          "n_rows": 68055,
+          "complete_case_n": 67903,
+          "alpha_complete_case": 0.8392062505384961,
+          "omega_one_factor_complete_case": 0.9256315493042184
+        },
+        {
+          "wave": "7",
+          "n_rows": 13948,
+          "complete_case_n": 13932,
+          "alpha_complete_case": 0.8498763685409765,
+          "omega_one_factor_complete_case": 0.9303662058958471
+        },
+        {
+          "wave": "8",
+          "n_rows": 53695,
+          "complete_case_n": 53524,
+          "alpha_complete_case": 0.8442955847188724,
+          "omega_one_factor_complete_case": 0.9279444655251777
+        },
+        {
+          "wave": "death",
+          "n_rows": 13584,
+          "complete_case_n": 0,
+          "alpha_complete_case": NaN,
+          "omega_one_factor_complete_case": NaN
+        }
+      ]
+    },
+    "mortality_available": true,
+    "death_endpoint_rows_excluded_from_domain_scoring": 13584,
+    "death_endpoint_rows_excluded_from_interview_cmm_scoring": 13584
+  }
+]

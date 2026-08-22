@@ -1,0 +1,7 @@
+cohort,original_reported_participants_ge2_waves,reconstructed_all_unique_included_waves,reconstructed_participants_ge2_waves,reconstructed_participants_ge3_waves,participants_with_constructed_interval,constructed_intervals,difference_ge2_vs_original,main_reason
+charls,21126,25873,23474,20727,23363,70067,2348,source reconstruction and complete included-wave roster
+elsa,15171,19802,15388,13213,15018,67471,217,minor roster reconstruction difference
+hrs,31284,36529,33000,29644,34466,180628,1716,source reconstruction and complete included-wave roster
+klosa,8181,9216,8516,7870,8842,29954,335,K-MMSE reconstruction and included waves 3-7
+mhas,10633,26837,19797,14598,20312,53922,9164,restored refreshed samples and corrected scheduled-wave denominator
+share,80614,117831,72343,43724,66818,121528,-8271,new headline counts all participants in cognition-compatible waves 4-8; original >=2-wave count used a wider wave set

@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-08-21T16:19:46.901689+00:00",
+  "pipeline_sha256": "7e05c130d1196d821329da07f27c740da4f506d9bfc0dac14d0caa90c25f630c",
+  "post_checkpoint_finalizer_sha256": "faadc1e12ab910e1b8084ae5917892e6de2092db7ba0ff34a9850372aec229cf",
+  "config_sha256": "66d12540c8407d06a5c998851adb9112298284eeafe1d4d0da01dd8b44836437",
+  "config": "config/revision_config_filled_20260821.json",
+  "participant_level_outputs_written": false,
+  "inputs": [
+    {
+      "cohort": "charls",
+      "path": "private_input/charls.csv",
+      "sha256": "433de2ceefc5d224bb2011a2dada7b9949ea99974075e1055e1e32b6e63f0e5a"
+    },
+    {
+      "cohort": "elsa",
+      "path": "private_input/elsa.csv",
+      "sha256": "314adb7bfc70c35db442d3e0ec3bbb9ae5e2beb6586bfd68d0ae348bdac2364a"
+    },
+    {
+      "cohort": "hrs",
+      "path": "private_input/hrs.csv",
+      "sha256": "3576b9319776d3dfe62ab1a0d186ed8f15c0a2e320c3ed8f4051695f7ccefba9"
+    },
+    {
+      "cohort": "klosa",
+      "path": "private_input/klosa.csv",
+      "sha256": "07c078090b1349418aa5011ead8b935c902e96b8037c8b890d1763e033771c09"
+    },
+    {
+      "cohort": "mhas",
+      "path": "private_input/mhas.csv",
+      "sha256": "41bf42419595daf0e107abd6c161f40fba8804eb580b758284eee4cf5dfcc52a"
+    },
+    {
+      "cohort": "share",
+      "path": "private_input/share.csv",
+      "sha256": "acc7290ae507e4593687037c7b659bd8df4b730dadb00c7f2a129d08435dea39"
+    }
+  ],
+  "note": "Paths are repository-relative placeholders; source cohort files are not redistributed. SHA-256 hashes identify the private inputs used in the locked rerun."
+}
